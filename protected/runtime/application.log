@@ -1694,3 +1694,22 @@ REQUEST_URI=/lcs/index.php/site/login
 in C:\xampp\htdocs\lcs\protected\components\MyWebUser.php (16)
 in C:\xampp\htdocs\lcs\protected\views\layouts\main.php (66)
 in C:\xampp\htdocs\lcs\protected\views\layouts\column1.php (5)
+2015/04/01 11:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin!".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('admin!')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('admin!')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/admin!/use...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/site/admin!/userManagement
+---
+2015/04/01 11:47:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/userManager/template/userManager.html".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('app/js/userMana...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/lcs/index.php/app/js/userManager/template/userManager.html
+HTTP_REFERER=http://localhost/lcs/index.php/site/admin/userManagement
+---
