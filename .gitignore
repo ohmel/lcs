@@ -2,6 +2,14 @@
 Thumbs.db
 ehthumbs.db
 
+# Directories that should not be committed
+.idea/
+assets/
+bower_components/
+vendor/
+images/icons/
+images/teams/
+
 # Folder config file
 Desktop.ini
 

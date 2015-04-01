@@ -1,0 +1,1696 @@
+2012/05/30 02:18:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:370
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\base\CComponent.php(153): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\test_cloud\protected\components\UserIdentity.php(21): CComponent->__set('active', true)
+#3 C:\xampp\htdocs\test_cloud\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 C:\xampp\htdocs\test_cloud\protected\controllers\SiteController.php(88): CModel->validate()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_cloud/index.php?r=site/login
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/login
+---
+2012/05/30 02:18:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:370
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\base\CComponent.php(153): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\test_cloud\protected\components\UserIdentity.php(21): CComponent->__set('active', true)
+#3 C:\xampp\htdocs\test_cloud\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 C:\xampp\htdocs\test_cloud\protected\controllers\SiteController.php(88): CModel->validate()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_cloud/index.php?r=site/login
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/login
+---
+2012/05/30 02:19:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: invalid data source name' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\base\CComponent.php(153): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\test_cloud\protected\components\UserIdentity.php(21): CComponent->__set('active', true)
+#3 C:\xampp\htdocs\test_cloud\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 C:\xampp\htdocs\test_cloud\protected\controllers\SiteController.php(88): CModel->validate()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_cloud/index.php?r=site/login
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/login
+---
+2012/05/30 02:19:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: invalid data source name' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\base\CComponent.php(153): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\test_cloud\protected\components\UserIdentity.php(21): CComponent->__set('active', true)
+#3 C:\xampp\htdocs\test_cloud\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 C:\xampp\htdocs\test_cloud\protected\controllers\SiteController.php(88): CModel->validate()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_cloud/index.php?r=site/login
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/login
+---
+2012/05/30 02:21:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\base\CComponent.php(153): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\test_cloud\protected\components\UserIdentity.php(21): CComponent->__set('active', true)
+#3 C:\xampp\htdocs\test_cloud\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 C:\xampp\htdocs\test_cloud\protected\controllers\SiteController.php(88): CModel->validate()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_cloud/index.php?r=site/login
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/login
+---
+2012/05/30 02:22:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\base\CComponent.php(153): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\test_cloud\protected\components\UserIdentity.php(21): CComponent->__set('active', true)
+#3 C:\xampp\htdocs\test_cloud\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 C:\xampp\htdocs\test_cloud\protected\controllers\SiteController.php(88): CModel->validate()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_cloud/index.php?r=site/login
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/login
+---
+2012/05/30 02:26:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\base\CComponent.php(153): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\test_cloud\protected\components\UserIdentity.php(21): CComponent->__set('active', true)
+#3 C:\xampp\htdocs\test_cloud\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 C:\xampp\htdocs\test_cloud\protected\controllers\SiteController.php(88): CModel->validate()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_cloud/index.php?r=site/login
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/login
+---
+2012/05/30 02:28:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\base\CComponent.php(153): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\test_cloud\protected\components\UserIdentity.php(21): CComponent->__set('active', true)
+#3 C:\xampp\htdocs\test_cloud\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 C:\xampp\htdocs\test_cloud\protected\controllers\SiteController.php(88): CModel->validate()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_cloud/index.php?r=site/login
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/login
+---
+2012/05/30 22:51:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/update')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/test_cloud/index.php?r=user/update
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/index
+---
+2012/05/30 22:52:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/update')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/test_cloud/index.php?r=user/update
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/index
+---
+2012/05/30 22:52:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/update')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/test_cloud/index.php?r=user/update
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/index
+---
+2012/05/30 22:52:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\test_cloud\protected\controllers\UserController.php:160
+Stack trace:
+#0 C:\xampp\htdocs\test_cloud\protected\controllers\UserController.php(88): UserController->loadModel('1')
+#1 [internal function]: UserController->actionUpdate('1')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/update')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_cloud/index.php?r=user/update&id=1
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=user/view&id=2
+---
+2012/05/30 22:52:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\test_cloud\protected\controllers\UserController.php:160
+Stack trace:
+#0 C:\xampp\htdocs\test_cloud\protected\controllers\UserController.php(88): UserController->loadModel('1')
+#1 [internal function]: UserController->actionUpdate('1')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/update')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_cloud/index.php?r=user/update&id=1
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=user/update&id=1
+---
+2012/05/30 22:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\test_cloud\protected\controllers\UserController.php:160
+Stack trace:
+#0 C:\xampp\htdocs\test_cloud\protected\controllers\UserController.php(88): UserController->loadModel('1')
+#1 [internal function]: UserController->actionUpdate('1')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/update')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/test_cloud/index.php?r=user/update&id=1
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=user/update&id=1
+---
+2012/05/31 04:05:01 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/update')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/test_cloud/index.php?r=user/update
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/login
+---
+2012/05/31 04:05:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/update')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/test_cloud/index.php?r=user/update
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=user/update
+---
+2012/05/31 04:12:17 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/update')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/test_cloud/index.php?r=user/update
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/contact
+---
+2012/05/31 04:12:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/update')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/test_cloud/index.php?r=user/update
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=site/page&view=about
+---
+2012/06/05 20:32:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "churchNeeds/view".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('churchNeeds/vie...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test_cloud/index.php?r=churchNeeds/view&id=1
+---
+2012/06/05 20:32:25 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser._id" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CWebUser.php(141): CComponent->__get('_id')
+#1 C:\xampp\htdocs\test_cloud\protected\views\user\view.php(18): CWebUser->__get('_id')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\test_cloud\protected\controllers\UserController.php(55): CController->render('view', Array)
+#7 [internal function]: UserController->actionView('2')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\test_cloud\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/test_cloud/index.php?r=user/view&id=2
+HTTP_REFERER=http://localhost/test_cloud/index.php?r=user
+---
+2012/12/06 03:58:56 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(140): renderAttributes()
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(413): tag()
+#2 C:\xampp\htdocs\cloud121admin\protected\views\site\index.php(20): image()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#7 C:\xampp\htdocs\cloud121admin\protected\controllers\SiteController.php(32): SiteController->render()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\cloud121admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/cloud121admin/index.php?r=site/
+in C:\xampp\htdocs\cloud121admin\protected\views\site\index.php (20)
+in C:\xampp\htdocs\cloud121admin\protected\controllers\SiteController.php (32)
+in C:\xampp\htdocs\cloud121admin\index.php (13)
+2012/12/06 03:59:04 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(140): renderAttributes()
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(413): tag()
+#2 C:\xampp\htdocs\cloud121admin\protected\views\site\index.php(20): image()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#7 C:\xampp\htdocs\cloud121admin\protected\controllers\SiteController.php(32): SiteController->render()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\cloud121admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/cloud121admin/index.php?r=site/
+in C:\xampp\htdocs\cloud121admin\protected\views\site\index.php (20)
+in C:\xampp\htdocs\cloud121admin\protected\controllers\SiteController.php (32)
+in C:\xampp\htdocs\cloud121admin\index.php (13)
+2012/12/06 03:59:20 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(140): renderAttributes()
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(413): tag()
+#2 C:\xampp\htdocs\cloud121admin\protected\views\site\index.php(20): image()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#7 C:\xampp\htdocs\cloud121admin\protected\controllers\SiteController.php(32): SiteController->render()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\cloud121admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/cloud121admin/index.php?r=site/
+in C:\xampp\htdocs\cloud121admin\protected\views\site\index.php (20)
+in C:\xampp\htdocs\cloud121admin\protected\controllers\SiteController.php (32)
+in C:\xampp\htdocs\cloud121admin\index.php (13)
+2012/12/06 04:02:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(MyWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('church/admin')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\cloud121admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cloud121admin/index.php?r=church/admin
+HTTP_REFERER=http://localhost/cloud121admin/index.php?r=site/
+---
+2012/12/06 04:02:43 [error] [exception.CHttpException.503: Forbidden or Login Failed!] exception 'CHttpException' with message 'Username or Password is invalid or you're not registered' in C:\xampp\htdocs\cloud121admin\protected\components\UserIdentity.php:38
+Stack trace:
+#0 C:\xampp\htdocs\cloud121admin\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#1 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#2 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 C:\xampp\htdocs\cloud121admin\protected\controllers\SiteController.php(89): CModel->validate()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\cloud121admin\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cloud121admin/index.php?r=site/login
+HTTP_REFERER=http://localhost/cloud121admin/index.php?r=site/login
+---
+2012/12/06 04:02:52 [error] [exception.CHttpException.503: Forbidden or Login Failed!] exception 'CHttpException' with message 'Username or Password is invalid or you're not registered' in C:\xampp\htdocs\cloud121admin\protected\components\UserIdentity.php:38
+Stack trace:
+#0 C:\xampp\htdocs\cloud121admin\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#1 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#2 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 C:\xampp\htdocs\cloud121admin\protected\controllers\SiteController.php(89): CModel->validate()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\cloud121admin\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cloud121admin/index.php?r=site/login
+HTTP_REFERER=http://localhost/cloud121admin/index.php?r=site/login
+---
+2012/12/06 04:07:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(MyWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('church/admin')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\cloud121admin\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cloud121admin/index.php?r=church/admin
+HTTP_REFERER=http://localhost/cloud121admin/index.php?r=church/index
+---
+2012/12/06 04:54:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "churchSupplies/admin".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('churchSupplies/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\cloud121admin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cloud121admin/index.php?r=churchSupplies/admin
+HTTP_REFERER=http://localhost/cloud121admin/index.php
+---
+2012/12/06 05:23:13 [error] [exception.CHttpException.503: Forbidden or Login Failed!] exception 'CHttpException' with message 'Username or Password is invalid or you're not registered' in C:\xampp\htdocs\cloud121admin\protected\components\UserIdentity.php:38
+Stack trace:
+#0 C:\xampp\htdocs\cloud121admin\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#1 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#2 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 C:\xampp\htdocs\cloud121admin\protected\controllers\SiteController.php(89): CModel->validate()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\cloud121admin\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/cloud121admin/index.php?r=site/login
+HTTP_REFERER=http://localhost/cloud121admin/index.php?r=site/login
+---
+2012/12/06 06:43:00 [error] [php] YiiBase::include(Chtml.php) [<a href='function.YiiBase-include'>function.YiiBase-include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\cloud121admin\protected\views\site\statistics.php(12): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#5 C:\xampp\htdocs\cloud121admin\protected\controllers\SiteController.php(78): SiteController->render()
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionStatistics()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\cloud121admin\index.php(13): CWebApplication->run()
+REQUEST_URI=/cloud121admin/index.php?r=site/statistics
+in C:\xampp\htdocs\cloud121admin\protected\views\site\statistics.php (12)
+in C:\xampp\htdocs\cloud121admin\protected\controllers\SiteController.php (78)
+in C:\xampp\htdocs\cloud121admin\index.php (13)
+2013/08/29 17:21:25 [error] [exception.CHttpException.503: Forbidden or Login Failed!] exception 'CHttpException' with message 'Username or Password is invalid or you're not registered' in C:\xampp\htdocs\admin-fresh\protected\components\UserIdentity.php:38
+Stack trace:
+#0 C:\xampp\htdocs\admin-fresh\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#1 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#2 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 C:\xampp\htdocs\admin-fresh\protected\controllers\SiteController.php(101): CModel->validate()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\admin-fresh\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/admin-fresh/index.php?r=site/login
+HTTP_REFERER=http://localhost/admin-fresh/index.php?r=site/login
+---
+2014/02/23 16:17:06 [error] [exception.CHttpException.503: Forbidden or Login Failed!] exception 'CHttpException' with message 'Username or Password is invalid or you're not registered' in C:\xampp\htdocs\admin-fresh\protected\components\UserIdentity.php:38
+Stack trace:
+#0 C:\xampp\htdocs\admin-fresh\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#1 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#2 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 C:\xampp\htdocs\admin-fresh\protected\controllers\SiteController.php(101): CModel->validate()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\admin-fresh\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/admin-fresh/index.php?r=site/login
+HTTP_REFERER=http://localhost/admin-fresh/index.php?r=site/login
+---
+2015/02/08 11:11:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud121_db.authitem' doesn't exist. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data).
+in C:\xampp\htdocs\resttest\protected\controllers\SiteController.php (31)
+in C:\xampp\htdocs\resttest\index.php (13)
+2015/02/08 11:11:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cloud121_db.authitem' doesn't exist. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(1178): CDbCommand->execute(Array)
+#1 C:\xampp\htdocs\yii\framework\web\auth\CDbAuthManager.php(441): CDbCommand->insert('AuthItem', Array)
+#2 C:\xampp\htdocs\yii\framework\web\auth\CAuthManager.php(101): CDbAuthManager->createAuthItem('createPost', 0, 'create a post', NULL, NULL)
+#3 C:\xampp\htdocs\resttest\protected\controllers\SiteController.php(31): CAuthManager->createOperation('createPost', 'create a post')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/resttest/
+---
+2015/02/10 08:07:34 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data).
+in C:\xampp\htdocs\resttest\protected\controllers\SiteController.php (31)
+in C:\xampp\htdocs\resttest\index.php (13)
+2015/02/10 08:07:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(1178): CDbCommand->execute(Array)
+#1 C:\xampp\htdocs\yii\framework\web\auth\CDbAuthManager.php(441): CDbCommand->insert('AuthItem', Array)
+#2 C:\xampp\htdocs\yii\framework\web\auth\CAuthManager.php(101): CDbAuthManager->createAuthItem('createPost', 0, 'create a post', NULL, NULL)
+#3 C:\xampp\htdocs\resttest\protected\controllers\SiteController.php(31): CAuthManager->createOperation('createPost', 'create a post')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/resttest/
+---
+2015/02/10 10:27:55 [error] [php] include(AppUsers.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\resttest\protected\components\UserIdentity.php(26): spl_autoload_call()
+#1 C:\xampp\htdocs\resttest\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 C:\xampp\htdocs\resttest\protected\controllers\SiteController.php(105): LoginForm->validate()
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\resttest\index.php(13): CWebApplication->run()
+REQUEST_URI=/resttest/index.php/site/login
+in C:\xampp\htdocs\resttest\protected\components\UserIdentity.php (26)
+in C:\xampp\htdocs\resttest\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\resttest\protected\controllers\SiteController.php (105)
+2015/02/12 09:55:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "teams".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('teams')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('teams')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/teams')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/teams
+HTTP_REFERER=http://localhost/resttest/
+---
+2015/02/12 10:38:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "template".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('template')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('template')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/template/s...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/template/slider.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/12 10:39:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "template".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('template')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('template')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/template/s...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/template/slider.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/12 10:40:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "template".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('template')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('template')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/template/s...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/template/slider.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/12 10:43:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "app".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('app')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('app')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/app/js/dir...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/app/js/directives/slider/templates/slider.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/12 10:45:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "resttest".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('resttest')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('resttest')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/resttest/a...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/resttest/app/js/directives/slider/templates/slider.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/12 10:53:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefinedresttest".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('undefinedrestte...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('undefinedrestte...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/undefinedr...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/undefinedresttest/app/js/directives/slider/template/slider.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/12 10:59:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('undefined')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('undefined')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/undefined/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/undefined/app/js/directives/slider/template/slider.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/12 12:07:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('js')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/js/vendor/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/js/vendor/angular-animate.js
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/14 23:46:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "popupTmpl.html".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('popupTmpl.html')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('popupTmpl.html')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/popupTmpl....')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/popupTmpl.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/14 23:47:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sdf".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('sdf')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('sdf')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/sdf')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/sdf
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/19 00:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "teams".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('teams')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('teams')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/teams')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/teams
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/19 05:00:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbagames')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/nbagames
+---
+2015/02/19 05:01:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "nbaGamges".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGamges')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resttest/index.php/nbaGamges
+---
+2015/02/19 05:02:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "nba/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nba/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resttest/index.php/nba/index
+---
+2015/02/19 05:24:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('api')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('api')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/api/nbaGam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/19 05:24:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('api')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('api')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/api/nbaGam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/19 05:26:18 [error] [exception.CException] exception 'CException' with message 'Alias "RestfullYii.actions.ERestBaseAction" is invalid. Make sure it points to an existing directory or file.' in C:\xampp\htdocs\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestActionProvider.php(2): YiiBase::import('RestfullYii.act...')
+#1 C:\xampp\htdocs\yii\framework\YiiBase.php(316): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(469): YiiBase::import('ext.starship.Re...', true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(418): CController->createActionFromMap(Array, 'REST.GET', 'REST.GET')
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(260): CController->createAction('REST.GET')
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/19 05:27:54 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/19 05:29:19 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/19 05:29:38 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/19 05:30:31 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/19 05:31:20 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/19 05:40:29 [error] [php] include(AppUsers.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\resttest\protected\components\UserIdentity.php(26): spl_autoload_call()
+#1 C:\xampp\htdocs\resttest\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#5 C:\xampp\htdocs\resttest\protected\controllers\SiteController.php(105): LoginForm->validate()
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\resttest\index.php(13): CWebApplication->run()
+REQUEST_URI=/resttest/index.php/site/login
+in C:\xampp\htdocs\resttest\protected\components\UserIdentity.php (26)
+in C:\xampp\htdocs\resttest\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\resttest\protected\controllers\SiteController.php (105)
+2015/02/19 05:41:18 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/
+HTTP_REFERER=http://localhost/resttest/index.php/
+---
+2015/02/19 05:41:36 [error] [exception.CException] exception 'CException' with message 'Property "Users.user_name" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('user_name')
+#1 C:\xampp\htdocs\resttest\protected\components\UserIdentity.php(41): CActiveRecord->__get('user_name')
+#2 C:\xampp\htdocs\resttest\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\resttest\protected\controllers\SiteController.php(105): CModel->validate()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/resttest/index.php/site/login
+HTTP_REFERER=http://localhost/resttest/index.php/site/login
+---
+2015/02/19 05:42:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/nbaGames
+HTTP_REFERER=http://localhost/resttest/index.php/site/login
+---
+2015/02/19 05:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Resource Not Found' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php:56
+Stack trace:
+#0 [internal function]: EActionRestGET->{closure}(Array, Array)
+#1 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#2 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#3 [internal function]: EActionRestGET->run('testRest', NULL, NULL)
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#8 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php/site/index
+---
+2015/02/19 05:48:33 [error] [php] Use of undefined constant req - assumed 'req' (C:\xampp\htdocs\resttest\protected\controllers\NbaGamesController.php:37)
+Stack trace:
+#0 unknown(0): ERestBehavior->ERestInit()
+#1 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array()
+#2 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(34): NbaGamesController->__call()
+#3 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(34): NbaGamesController->ERestInit()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): ERestFilter->filter()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): NbaGamesController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): NbaGamesController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): NbaGamesController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\resttest\index.php(13): CWebApplication->run()
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+in C:\xampp\htdocs\resttest\protected\controllers\NbaGamesController.php (37)
+in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php (73)
+in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php (51)
+2015/02/19 05:49:03 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 05:49:43 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 05:54:58 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 05:55:10 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 06:00:36 [error] [php] include(ERestEvent.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): spl_autoload_call()
+#1 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): EActionRestGET->finalRender()
+#2 unknown(0): EActionRestGET->run()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): EActionRestGET->runWithParamsInternal()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(309): EActionRestGET->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): NbaGamesController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): NbaGamesController->filterAccessControl()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): NbaGamesController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): NbaGamesController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\resttest\index.php(13): CWebApplication->run()
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php (60)
+in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php (59)
+in C:\xampp\htdocs\resttest\index.php (13)
+2015/02/19 06:01:02 [error] [php] include(ERestEvent.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): spl_autoload_call()
+#1 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): EActionRestGET->finalRender()
+#2 unknown(0): EActionRestGET->run()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): EActionRestGET->runWithParamsInternal()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(309): EActionRestGET->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): NbaGamesController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): NbaGamesController->filterAccessControl()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): NbaGamesController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): NbaGamesController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\resttest\index.php(13): CWebApplication->run()
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php (60)
+in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php (59)
+in C:\xampp\htdocs\resttest\index.php (13)
+2015/02/19 06:02:00 [error] [php] include(ERestEvent.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): spl_autoload_call()
+#1 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): EActionRestGET->finalRender()
+#2 unknown(0): EActionRestGET->run()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): EActionRestGET->runWithParamsInternal()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(309): EActionRestGET->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): NbaGamesController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(266): NbaGamesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): NbaGamesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\resttest\index.php(13): CWebApplication->run()
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php (60)
+in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php (59)
+in C:\xampp\htdocs\resttest\index.php (13)
+2015/02/19 06:02:22 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#6 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 06:03:21 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#6 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 06:03:37 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#6 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 06:16:15 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#6 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 06:16:44 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:81
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#6 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/testRest
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 22:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Resource Not Found' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php:56
+Stack trace:
+#0 [internal function]: EActionRestGET->{closure}(Array, Array)
+#1 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#2 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#3 [internal function]: EActionRestGET->run('getGames', NULL, NULL)
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#8 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/getGames
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 22:50:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Resource Not Found' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php:56
+Stack trace:
+#0 [internal function]: EActionRestGET->{closure}(Array, Array)
+#1 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#2 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#3 [internal function]: EActionRestGET->run('getGames', NULL, NULL)
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#8 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/getGames
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 22:51:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Resource Not Found' in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php:56
+Stack trace:
+#0 [internal function]: EActionRestGET->{closure}(Array, Array)
+#1 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#2 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#3 [internal function]: EActionRestGET->run('getGames', NULL, NULL)
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#8 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/getGames
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 22:51:58 [error] [exception.CException] exception 'CException' with message 'Property "NbaGames.gameTime" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('gameTime')
+#1 C:\xampp\htdocs\resttest\protected\controllers\NbaGamesController.php(36): CActiveRecord->__get('gameTime')
+#2 C:\xampp\htdocs\resttest\protected\controllers\NbaGamesController.php(43): NbaGamesController->fetchGames()
+#3 [internal function]: NbaGamesController->{closure}(NULL, NULL)
+#4 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#5 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.get.fetchGa...', Array)
+#6 [internal function]: ERestBehavior->emitRest('req.get.fetchGa...', Array)
+#7 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): CComponent->__call('emitRest', Array)
+#9 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): NbaGamesController->emitRest('req.get.fetchGa...', Array)
+#10 [internal function]: EActionRestGET->{closure}(Array, Array)
+#11 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#12 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#13 [internal function]: EActionRestGET->run('fetchGames', NULL, NULL)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#18 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#23 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('nbaGames/REST.G...')
+#25 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/resttest/index.php/api/nbaGames/fetchGames
+HTTP_REFERER=http://localhost/resttest/index.php
+---
+2015/02/19 22:52:13 [error] [php] A non well formed numeric value encountered (C:\xampp\htdocs\resttest\protected\controllers\NbaGamesController.php:36)
+Stack trace:
+#0 unknown(0): NbaGamesController->{closure}()
+#1 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#2 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#3 unknown(0): ERestBehavior->emitRest()
+#4 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array()
+#5 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): NbaGamesController->__call()
+#6 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): NbaGamesController->emitRest()
+#7 unknown(0): EActionRestGET->{closure}()
+#8 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array()
+#9 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): EActionRestGET->finalRender()
+#10 unknown(0): EActionRestGET->run()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): EActionRestGET->runWithParamsInternal()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(309): EActionRestGET->runWithParams()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): NbaGamesController->runAction()
+#15 C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): ERestFilter->filter()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(266): NbaGamesController->runActionWithFilters()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): NbaGamesController->run()
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\resttest\index.php(13): CWebApplication->run()
+REQUEST_URI=/resttest/index.php/api/nbaGames/fetchGames
+in C:\xampp\htdocs\resttest\protected\controllers\NbaGamesController.php (36)
+in C:\xampp\htdocs\resttest\protected\controllers\NbaGamesController.php (43)
+in C:\xampp\htdocs\resttest\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/02/25 07:09:09 [error] [exception.CHttpException.503: Forbidden or Login Failed!] exception 'CHttpException' with message 'Username or Password is invalid or you're not registered' in C:\xampp\htdocs\resttest\protected\components\UserIdentity.php:38
+Stack trace:
+#0 C:\xampp\htdocs\resttest\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#1 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#2 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 C:\xampp\htdocs\resttest\protected\controllers\SiteController.php(105): CModel->validate()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/resttest/index.php/site/login
+HTTP_REFERER=http://localhost/resttest/index.php/site/login
+---
+2015/02/25 07:09:22 [error] [exception.CHttpException.503: Forbidden or Login Failed!] exception 'CHttpException' with message 'Username or Password is invalid or you're not registered' in C:\xampp\htdocs\resttest\protected\components\UserIdentity.php:38
+Stack trace:
+#0 C:\xampp\htdocs\resttest\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#1 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#2 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 C:\xampp\htdocs\resttest\protected\controllers\SiteController.php(105): CModel->validate()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/resttest/index.php/site/login
+HTTP_REFERER=http://localhost/resttest/index.php/site/login
+---
+2015/02/25 07:10:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('admin')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/admin')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/admin
+HTTP_REFERER=http://localhost/resttest/index.php/site/login
+---
+2015/02/25 07:13:03 [error] [exception.CHttpException.503] exception 'CHttpException' with message 'Forbidden Resource' in C:\xampp\htdocs\resttest\protected\controllers\SiteController.php:46
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionAdmin()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/admin')
+#6 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/resttest/index.php/site/admin
+---
+2015/02/25 09:03:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "games".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('games')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('games')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/games/temp...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/games/template/games.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/admin
+---
+2015/02/25 09:07:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "app".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('app')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('app')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/app/js/gam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/app/js/games/template/games.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/admin
+---
+2015/02/25 09:07:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "app".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('app')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('app')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/app/js/gam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/app/js/games/template/games.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/admin
+---
+2015/02/25 09:08:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/games/template/games.html".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('app/js/games/te...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resttest/index.php/app/js/games/template/games.html
+---
+2015/02/25 09:09:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/games/template/games.html".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('app/js/games/te...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resttest/index.php/app/js/games/template/games.html
+---
+2015/02/25 09:09:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "app".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('app')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('app')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/app/js/gam...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/app/js/games/template/games.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/admin
+---
+2015/02/25 09:09:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "resttest".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('resttest')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('resttest')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/resttest/a...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/resttest/index.php/site/resttest/app/js/games/template/games.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/admin
+---
+2015/02/25 09:09:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/js/games/template/games.html".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('app/js/games/te...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\resttest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resttest/index.php/app/js/games/template/games.html
+HTTP_REFERER=http://localhost/resttest/index.php/site/admin
+---
+2015/03/30 13:59:37 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT * FROM `lcs_users` `t` WHERE username=:user_name and password=:user_password and user_type = 'Administrator' LIMIT 1.
+in C:\xampp\htdocs\lcs\protected\components\UserIdentity.php (22)
+in C:\xampp\htdocs\lcs\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\lcs\protected\controllers\SiteController.php (113)
+2015/03/30 13:59:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT * FROM `lcs_users` `t` WHERE username=:user_name and password=:user_password and user_type = 'Administrator' LIMIT 1' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1392): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\xampp\htdocs\lcs\protected\components\UserIdentity.php(22): CActiveRecord->find('username=:user_...', Array)
+#4 C:\xampp\htdocs\lcs\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#5 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#6 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#8 C:\xampp\htdocs\lcs\protected\controllers\SiteController.php(113): CModel->validate()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/lcs/index.php/site/login
+HTTP_REFERER=http://localhost/lcs/index.php/site/login
+---
+2015/03/30 14:00:21 [error] [exception.CException] exception 'CException' with message 'Property "LcsUsers.username" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('username')
+#1 C:\xampp\htdocs\lcs\protected\components\UserIdentity.php(27): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\lcs\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\lcs\protected\controllers\SiteController.php(113): CModel->validate()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/lcs/index.php/site/login
+HTTP_REFERER=http://localhost/lcs/index.php/site/login
+---
+2015/03/31 14:36:19 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\lcs\protected\components\MyWebUser.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#3 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(207): CContentDecorator->run()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(301): SiteController->endWidget()
+#6 C:\xampp\htdocs\lcs\protected\views\layouts\column1.php(5): SiteController->endContent()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(785): SiteController->renderFile()
+#10 C:\xampp\htdocs\lcs\protected\controllers\SiteController.php(117): SiteController->render()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\lcs\index.php(13): CWebApplication->run()
+REQUEST_URI=/lcs/index.php/site/login
+in C:\xampp\htdocs\lcs\protected\components\MyWebUser.php (16)
+in C:\xampp\htdocs\lcs\protected\views\layouts\main.php (66)
+in C:\xampp\htdocs\lcs\protected\views\layouts\column1.php (5)
+2015/03/31 14:38:02 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\lcs\protected\components\MyWebUser.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#3 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(207): CContentDecorator->run()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(301): SiteController->endWidget()
+#6 C:\xampp\htdocs\lcs\protected\views\layouts\column1.php(5): SiteController->endContent()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(785): SiteController->renderFile()
+#10 C:\xampp\htdocs\lcs\protected\controllers\SiteController.php(117): SiteController->render()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\lcs\index.php(13): CWebApplication->run()
+REQUEST_URI=/lcs/index.php/site/login
+in C:\xampp\htdocs\lcs\protected\components\MyWebUser.php (16)
+in C:\xampp\htdocs\lcs\protected\views\layouts\main.php (66)
+in C:\xampp\htdocs\lcs\protected\views\layouts\column1.php (5)
+2015/03/31 14:38:58 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\lcs\protected\components\MyWebUser.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#3 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(207): CContentDecorator->run()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(301): SiteController->endWidget()
+#6 C:\xampp\htdocs\lcs\protected\views\layouts\column1.php(5): SiteController->endContent()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(785): SiteController->renderFile()
+#10 C:\xampp\htdocs\lcs\protected\controllers\SiteController.php(117): SiteController->render()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\lcs\index.php(13): CWebApplication->run()
+REQUEST_URI=/lcs/index.php/site/login
+in C:\xampp\htdocs\lcs\protected\components\MyWebUser.php (16)
+in C:\xampp\htdocs\lcs\protected\views\layouts\main.php (66)
+in C:\xampp\htdocs\lcs\protected\views\layouts\column1.php (5)
