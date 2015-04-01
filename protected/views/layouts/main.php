@@ -26,6 +26,9 @@
             <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/ngDialog/css/ngDialog-theme-plain.css" />
             <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/app/js/directives/slider/css/slider.css" />
 
+            <!-- Bootstrap JS -->
+            <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
             <!-- Angular Controllers -->
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/angular/angular.js"></script>
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/app.js"></script>
@@ -38,8 +41,8 @@
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/ng-notify/dist/ng-notify.min.js"></script>
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/angular-route/angular-route.min.js"></script>
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/ngDialog/js/ngDialog.min.js"></script>
-            
-            
+
+
 
             <!-- Angular Services -->
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/services/userManagerService.js"></script>
@@ -52,8 +55,8 @@
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/directives/slider/slider.js"></script>
 
             <!-- Bootstrap Components -->
-
-            <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/angular-ui-bootstrap/src/tooltip/tooltip.js"></script>
+            <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/bootstrap/js/tooltip.js"></script>
+            <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/bootstrap/js/collapse.js"></script>
 
             <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     </head>
