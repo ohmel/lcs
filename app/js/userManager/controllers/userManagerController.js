@@ -5,17 +5,23 @@
  * test git
  */
 
-app.controller('UserManagerController', function ($scope, Globals, ngNotify, ngDialog, userManagerService) {
+app.controller('UserManagerController', function ($rootScope, $scope, Globals, ngNotify, ngDialog, userManagerService, $route, $routeParams) {
 
     $scope.loader = 0;
     $scope.userManagerService = userManagerService;
+
+    $scope.setRoute = function (currentRoute) {
+        $rootScope.route = currentRoute;
+    }
 
     userManagerService.fetchUsers(
         function (success) {
             userManagerService.users = success.data;
             $scope.loader = 1;
+            ngNotify.set("Successfully loaded all users", 'info');
         }, function (error) {
             ngNotify.set(error.message, 'error');
         });
+
 });
 

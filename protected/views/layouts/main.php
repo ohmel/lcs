@@ -36,6 +36,7 @@
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/routing.js"></script>
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/site/controllers/siteController.js"></script>
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/controllers/userManagerController.js"></script>
+            <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/controllers/addUserController.js"></script>
 
             <!-- Angular Injectors -->
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/angular-animate/angular-animate.js"></script>
