@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-app.factory('Globals', function() {
+app.factory('Globals', function($location) {
     //root folder Url
-    var rootUrl = 'http://localhost/lcs';
+    var rootUrl = 'http://'+$location.host()+'/lcs/';
   return {
       rootUrl : rootUrl
   };

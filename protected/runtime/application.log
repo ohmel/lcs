@@ -1726,3 +1726,128 @@ Stack trace:
 #8 {main}
 REQUEST_URI=/lcs/index.php/site/admin
 ---
+2015/04/01 17:08:28 [error] [exception.CHttpException.503] exception 'CHttpException' with message 'Forbidden Resource' in C:\xampp\htdocs\lcs\protected\controllers\SiteController.php:50
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionAdmin()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/admin')
+#6 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/lcs/index.php/site/admin
+---
+2015/04/01 20:01:20 [error] [exception.CHttpException.503] exception 'CHttpException' with message 'Forbidden Resource' in C:\xampp\htdocs\lcs\protected\controllers\SiteController.php:50
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionAdmin()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/admin')
+#6 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/lcs/index.php/site/admin
+---
+2015/04/01 21:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('index.php')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/site/index.php/api/user/fetchUsers
+HTTP_REFERER=http://localhost/lcs/index.php/site/admin
+---
+2015/04/01 21:22:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('api')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('api')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/api/user/f...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/site/api/user/fetchUsers
+HTTP_REFERER=http://localhost/lcs/index.php/site/admin
+---
+2015/04/01 21:23:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('user')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('user')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/user/fetch...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/site/user/fetchUsers
+HTTP_REFERER=http://localhost/lcs/index.php/site/admin
+---
+2015/04/01 21:25:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lcs".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('lcs')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('lcs')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/lcs/index....')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/site/lcs/index.php/api/user/fetchUsers
+HTTP_REFERER=http://localhost/lcs/index.php/site/admin
+---
+2015/04/01 21:26:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('site')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/site/api/u...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/site/site/api/user/fetchUsers
+HTTP_REFERER=http://localhost/lcs/index.php/site/admin
+---
+2015/04/01 21:37:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('api')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('api')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/api/user/f...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/site/api/user/fetchUsers
+HTTP_REFERER=http://localhost/lcs/index.php/site/admin
+---
+2015/04/01 21:38:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('index.php')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/site/index.php/api/user/fetchUsers
+HTTP_REFERER=http://localhost/lcs/index.php/site/admin
+---
+2015/04/01 21:44:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "api".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('api')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('api')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/api/user/f...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/site/api/user/fetchUsers
+HTTP_REFERER=http://localhost/lcs/index.php/site/admin
+---
+2015/04/01 21:49:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "localhostapi".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('localhostapi')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('localhostapi')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/localhosta...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/site/localhostapi/user/fetchUsers
+HTTP_REFERER=http://localhost/lcs/index.php/site/admin
+---

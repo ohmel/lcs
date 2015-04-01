@@ -5,7 +5,7 @@
  * test git
  */
 
-app.controller('UserManagerController', function ($rootScope, $scope, Globals, ngNotify, ngDialog, userManagerService, $route, $routeParams) {
+app.controller('UserManagerController', function ($rootScope, $scope, Globals, ngNotify, ngDialog, userManagerService) {
 
     $scope.loader = 0;
     $scope.userManagerService = userManagerService;

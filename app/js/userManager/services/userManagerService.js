@@ -1,14 +1,13 @@
-app.service('userManagerService', function ($http,
-                                            ngNotify) {
+app.service('userManagerService', function ($http, Globals) {
 
     "use strict";
 
-    var url = "http://localhost/lcs/index.php/api/user/",
+    var url = Globals.rootUrl+"index.php/",
         users = [],
         fetchUsers = function (callback, errback) {
             $http({
                 method: 'GET',
-                url: url + 'fetchUsers',
+                url: url+'api/user/fetchUsers'
             }).success(callback).error(errback);
         };
 
