@@ -1,18 +1,24 @@
 <ul class="list-group">
-    <li class="list-group-item"  ng-repeat="user in userManagerService.users" >
-        <div style="display:inline-block; width: 200px">
-            <span style="color: limegreen" ng-if="user.user_status == 1" class="glyphicon glyphicon-ok"></span>
-            <strong>{{user.user_fullname}}</strong>
-            <br/>
-            {{user.user_type}}<br/>
-        </div>
-        <div style="display:inline-block; width: 70%; text-align: right">
-            <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-zoom-in"></span></button>
-                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-edit"></span></button>
-                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button>
+    <li class="list-group-item" ng-repeat="user in userManagerService.users">
+        <div class="row">
+            <div class="col-md-4">
+                <strong>{{user.user_fullname}}</strong>
+                <span style="color: limegreen" ng-if="user.user_status == 1" class="glyphicon glyphicon-ok"></span>
+                <br/>
+                {{user.user_type}}<br/>
+            </div>
+            <div class="col-md-8" style="text-align: right">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-zoom-in"></span>
+                    </button>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-edit"></span>
+                    </button>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                </div>
             </div>
         </div>
+
 
     </li>
 </ul>
