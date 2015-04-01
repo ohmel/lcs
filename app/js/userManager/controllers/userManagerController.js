@@ -7,12 +7,13 @@
 
 app.controller('UserManagerController', function ($scope, Globals, ngNotify, ngDialog, userManagerService) {
 
-    $scope.foo = "Hello World!!";
+    $scope.loader = 0;
     $scope.userManagerService = userManagerService;
 
     userManagerService.fetchUsers(
         function (success) {
             userManagerService.users = success.data;
+            $scope.loader = 1;
         }, function (error) {
             ngNotify.set(error.message, 'error');
         });
