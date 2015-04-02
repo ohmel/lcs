@@ -32,15 +32,6 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
-<form novalidate class="simple-form">
-    Name: <input type="text" ng-model="user.name"/><br/>
-    E-mail: <input type="email" ng-model="user.email"/><br/>
-    Gender: <input type="radio" ng-model="user.gender" value="male"/>male
-    <input type="radio" ng-model="user.gender" value="female"/>female<br/>
-    <input type="button" ng-click="reset()" value="Reset"/>
-    <input type="submit" ng-click="update(user)" value="Save"/>
-</form>
-
 <form>
     <div class="col-md-5">
         <div class="form-group">
@@ -56,17 +47,46 @@
             <input type="password" class="form-control" id="user_password" placeholder="Password">
         </div>
         <div class="form-group">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password">
+        </div>
+        <div class="form-group">
             <label for="user_type">User Type</label>
             <select class="form-control" id="user_type">
+                <option>User</option>
                 <option>Administrator</option>
                 <option>Developer</option>
-                <option>User</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-success">Register</button>
     </div>
-    <div class="col-md-5">
-        sadf
+    <div class="col-md-7">
+        <table class="table">
+            <tr class="success">
+                <th scope="row">Admissions</th>
+                <td><input type="checkbox"> Add Student</td>
+                <td><input type="checkbox"> Edit Student</td>
+                <td><input type="checkbox"> Delete Student</td>
+            </tr>
+            <tr class="info">
+                <th scope="row">Registrar</th>
+                <td><input type="checkbox"> Access1</td>
+                <td><input type="checkbox"> Access2</td>
+                <td><input type="checkbox"> Access3</td>
+            </tr>
+            <tr class="warning">
+                <th scope="row">Library</th>
+                <td><input type="checkbox"> Access1</td>
+                <td><input type="checkbox"> Access2</td>
+                <td><input type="checkbox"> Access3</td>
+            </tr>
+            <tr class="danger">
+                <th scope="row">Finance</th>
+                <td><input type="checkbox"> Access1</td>
+                <td><input type="checkbox"> Access2</td>
+                <td><input type="checkbox"> Access3</td>
+            </tr>
+        </table>
     </div>
 
 </form>
