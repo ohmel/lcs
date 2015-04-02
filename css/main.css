@@ -295,6 +295,12 @@ h3{
     vertical-align: top;
 }
 
+.login-form{
+    padding: 10px;
+    background: #7D7D7D;
+    border-radius: 5px;
+}
+
 .div-box{
 }
 
