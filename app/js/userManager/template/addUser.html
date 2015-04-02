@@ -32,35 +32,51 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
-<form>
+<form name="myForm" novalidate>
     <div class="col-md-5">
         <div class="form-group">
             <label for="user_fullname">Full Name</label>
-            <input type="text" class="form-control" id="user_fullname" placeholder="Full name">
+            <input type="text" name="user_fullname" ng-model="user.user_fullname" class="form-control" id="user_fullname"
+                   placeholder="Full name" required>
+            <span style="color:red" ng-show="myForm.user_fullname.$dirty && myForm.user_fullname.$invalid">
+                <span ng-show="myForm.user_fullname.$error.required">Full name is required.</span>
+            </span>
         </div>
         <div class="form-group">
             <label for="user_name">Username</label>
-            <input type="text" class="form-control" id="user_name" placeholder="Username">
+            <input type="text" name="user_name" ng-model="user.user_name" class="form-control" id="user_name" placeholder="Username"
+                   required>
+            <span style="color:red" ng-show="myForm.user_name.$dirty && myForm.user_name.$invalid">
+                <span ng-show="myForm.user_name.$error.required">Username is required.</span>
+            </span>
         </div>
         <div class="form-group">
             <label for="user_password">Password</label>
-            <input type="password" class="form-control" id="user_password" placeholder="Password">
+            <input type="password" name="user_password" ng-model="user.user_password" class="form-control" id="user_password"
+                   placeholder="Password" required>
+            <span style="color:red" ng-show="myForm.user_password.$dirty && myForm.user_password.$invalid">
+                <span ng-show="myForm.user_password.$error.required">Username is required.</span>
+            </span>
         </div>
         <div class="form-group">
             <label for="confirm_password">Confirm Password</label>
-            <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password">
+            <input ng-disabled="myForm.user_password.$invalid" type="password" ng-model="user.confirm_password" class="form-control" id="confirm_password"
+                   placeholder="Confirm Password">
         </div>
         <div class="form-group">
             <label for="user_type">User Type</label>
-            <select class="form-control" id="user_type">
+            <select class="form-control" ng-model="user.user_type" id="user_type">
                 <option>User</option>
                 <option>Administrator</option>
                 <option>Developer</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-success">Register</button>
+        <button type="button"  ng-disabled="myForm.user_fullname.$invalid || myForm.user_name.$invalid || myForm.user_password.$invalid || myForm.user_type.$invalid " ng-click="addUser(user)" class="btn btn-success">Register</button>
     </div>
     <div class="col-md-7">
+        <br/>
+        <br/>
+        <h4>User Module Access Setup</h4>
         <table class="table">
             <tr class="success">
                 <th scope="row">Admissions</th>
@@ -87,6 +103,7 @@
                 <td><input type="checkbox"> Access3</td>
             </tr>
         </table>
+        <pre>{{user}}</pre>
     </div>
 
 </form>
