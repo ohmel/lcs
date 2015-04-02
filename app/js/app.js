@@ -6,6 +6,7 @@
 var app = angular.module('oSystems', ['ngAnimate','ngNotify','ngDialog','ngRoute'])
     .run(function($rootScope) {
         $rootScope.route = "";
+
     });
 
 

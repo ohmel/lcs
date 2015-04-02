@@ -32,3 +32,41 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
+<form novalidate class="simple-form">
+    Name: <input type="text" ng-model="user.name"/><br/>
+    E-mail: <input type="email" ng-model="user.email"/><br/>
+    Gender: <input type="radio" ng-model="user.gender" value="male"/>male
+    <input type="radio" ng-model="user.gender" value="female"/>female<br/>
+    <input type="button" ng-click="reset()" value="Reset"/>
+    <input type="submit" ng-click="update(user)" value="Save"/>
+</form>
+
+<form>
+    <div class="col-md-5">
+        <div class="form-group">
+            <label for="user_fullname">Full Name</label>
+            <input type="text" class="form-control" id="user_fullname" placeholder="Full name">
+        </div>
+        <div class="form-group">
+            <label for="user_name">Username</label>
+            <input type="text" class="form-control" id="user_name" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <label for="user_password">Password</label>
+            <input type="password" class="form-control" id="user_password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="user_type">User Type</label>
+            <select class="form-control" id="user_type">
+                <option>Administrator</option>
+                <option>Developer</option>
+                <option>User</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+    <div class="col-md-5">
+        sadf
+    </div>
+
+</form>

@@ -6,7 +6,7 @@
  */
 
 app.controller('AddUserController', function ($rootScope, $scope, Globals, ngNotify, ngDialog, userManagerService) {
-
+    $('button').tooltip();
     $scope.loader = 0;
     $scope.userManagerService = userManagerService;
     $scope.user = {};
