@@ -7,6 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
+    <!-- modernizr -->
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/css/component.css" />
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/js/modernizr.custom.js"></script>
+
+    <!-- elastic -->
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/css/sidebar.css" />
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/js/snap.svg-min.js"></script>
+
     <!-- blueprint CSS framework -->
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css"
@@ -74,6 +86,8 @@
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/bootstrap/js/transition.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/bootstrap/js/tooltip.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/bootstrap/js/collapse.js"></script>
+
+
 
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>

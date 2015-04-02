@@ -4,8 +4,8 @@
  * and open the template in the editor.
  */
 
-app.controller('SiteController', function($scope, Globals, ngNotify, ngDialog, nbaGames) {
-
+app.controller('SiteController', function($scope, Globals, ngNotify, ngDialog) {
+    $('i').tooltip();
     $scope.clickToOpen = function() {
         ngDialog.open({
             template:'\
