@@ -9,10 +9,14 @@ app.controller('AddUserController', function ($rootScope, $scope, Globals, ngNot
     $('button').tooltip();
     $scope.loader = 0;
     $scope.userManagerService = userManagerService;
-    $scope.user = {};
+    $scope.user = {user_type: 'User'};
 
-    $scope.setRoute = function (currentRoute) {
-        $rootScope.route = currentRoute;
+    $scope.addUser = function (userPostedData) {
+        userManagerService.addUser(function(success){
+            ngNotify.set("Successfully registered new user!", 'success');
+        }, function(error){
+            ngNotify.set("Ooops! You might have missed something...", 'error');
+        }, userPostedData);
     }
 });
 
