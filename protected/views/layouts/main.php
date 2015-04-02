@@ -111,7 +111,7 @@
 //                        array('label' => 'Contact', 'url' => array('/site/contact')),
 //                        array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
                         array('label' => 'School Setup', 'url' => array('/site/players'), 'visible' => !Yii::app()->user->isGuest),
-                        array('label' => 'Settings', 'url' => array('/site/teams'), 'visible' => !Yii::app()->user->isGuest),
+                        array('label' => 'Settings', 'url' => array('/site/admin#/userManagement'), 'visible' => !Yii::app()->user->isGuest),
                         array('label' => 'Home', 'url' => array('/site/index'), 'visible' => !Yii::app()->user->isGuest),
                     ),
                 ));

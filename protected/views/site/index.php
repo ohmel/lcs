@@ -1,61 +1,85 @@
 <ul class="grid cs-style-4" style="padding: 0px">
     <li>
         <figure>
-            <div><img style="width: 400px; height: 200px;" src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/images/7.jpg" alt="img05"></div>
+            <div><img style="width: 400px; height: 200px;" src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/images/7.jpg" alt="Admissions"></div>
             <figcaption>
                 <h3>Admissions</h3>
-                <span>School Management System</span>
+                <span style="font-size: 11px">School Management System</span>
+                <br/>
+                <div style="color: white; font-size: 11px; margin-top: 5px">
+                    Enrollment, Course Placement, and, Syllabi's
+                </div>
                 <a href="http://dribbble.com/shots/1116775-Safari">Student Enrollment</a>
             </figcaption>
         </figure>
     </li>
     <li>
         <figure>
-            <div><img style="width: 400px; height: 200px;" src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/images/8.jpg" alt="img06"></div>
+            <div><img style="width: 400px; height: 200px;" src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/images/8.jpg" alt="Grading"></div>
             <figcaption>
                 <h3>Grading</h3>
-                <span>School Management System</span>
+                <span style="font-size: 11px">School Management System</span>
+                <br/>
+                <div style="color: white; font-size: 11px; margin-top: 5px">
+                Student Grades, Grading Computation, and, Report Cards
+                </div>
                 <a href="http://dribbble.com/shots/1118904-Game-Center">Manage Grades</a>
             </figcaption>
         </figure>
     </li>
     <li>
         <figure>
-            <div><img src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/images/7.jpg" alt="img02"></div>
+            <div><img src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/images/9.jpg" alt="StudentManagement"></div>
             <figcaption>
-                <h3>Music</h3>
-                <span>Jacob Cummings</span>
-                <a href="http://dribbble.com/shots/1115960-Music">Take a look</a>
+                <h3>Student Management</h3>
+                <span style="font-size: 11px">School Management System</span>
+                <br/>
+                <div style="color: white; font-size: 11px; margin-top: 5px">
+                    Monitor and Manage Students
+                </div>
+                <a href="http://dribbble.com/shots/1115960-Music">Manage Students</a>
             </figcaption>
         </figure>
     </li>
     <li>
         <figure>
-            <div><img src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/images/7.jpg" alt="img04"></div>
+            <div><img src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/images/10.jpg" alt="Registrar"></div>
             <figcaption>
-                <h3>Settings</h3>
-                <span>Jacob Cummings</span>
-                <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+                <h3>Registrar</h3>
+                <span style="font-size: 11px">School Management System</span>
+                <br/>
+                <div style="color: white; font-size: 11px; margin-top: 5px">
+                    Just Registrar
+                </div>
+                <a href="http://dribbble.com/shots/1116685-Settings">Manage Registry</a>
             </figcaption>
         </figure>
     </li>
     <li>
         <figure>
-            <div><img src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/images/7.jpg" alt="img01"></div>
+            <div><img src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/images/11.jpg" alt="HumanResource"></div>
             <figcaption>
-                <h3>Camera</h3>
-                <span>Jacob Cummings</span>
-                <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                <h3>Human Resource</h3>
+                <span style="font-size: 11px">School Management System</span>
+                <br/>
+                <div style="color: white; font-size: 11px; margin-top: 5px">
+                    Master Files, Time Keeping, Performance Evaluation, and Payroll
+                </div>
+                <a href="http://dribbble.com/shots/1115632-Camera">Manage Workforce</a>
             </figcaption>
         </figure>
     </li>
     <li>
         <figure>
-            <div><img src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/images/7.jpg" alt="img03"></div>
+            <div><img src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/images/12.jpg" alt="Library"></div>
             <figcaption>
-                <h3>Phone</h3>
-                <span>Jacob Cummings</span>
-                <a href="http://dribbble.com/shots/1117308-Phone">Take a look</a>
+                <h3>Library</h3>
+                <span style="font-size: 11px">School Management</span>
+                <br/>
+                <div style="color: white; font-size: 11px; margin-top: 5px">
+                    Book Listings, Borrowing, Inventory, and Tracking
+                </div>
+                <a href="http://dribbble.com/shots/1117308-Phone">Enter Library</a>
             </figcaption>
         </figure>
     </li>
