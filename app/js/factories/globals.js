@@ -5,7 +5,11 @@
  */
 app.factory('Globals', function($location) {
     //root folder Url
-    var rootUrl = 'http://'+$location.host()+'/lcs/';
+    var host = $location.host()+"/";
+    if(host === 'localhost/'){
+        host = $location.host()+"/lcs/"
+    }
+    var rootUrl = 'http://'+host;
   return {
       rootUrl : rootUrl
   };

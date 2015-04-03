@@ -2029,3 +2029,25 @@ Stack trace:
 REQUEST_URI=/lcs/index.php/site/js/snap.svg-min.js
 HTTP_REFERER=http://localhost/lcs/index.php/site/admin
 ---
+2015/04/03 06:46:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "players".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('players')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('players')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/players')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/site/players
+HTTP_REFERER=http://localhost/lcs/index.php/site/index
+---
+2015/04/03 07:04:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "players".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('players')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('players')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/players')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/site/players
+HTTP_REFERER=http://localhost/lcs/index.php/site/index
+---
