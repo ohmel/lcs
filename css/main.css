@@ -15,7 +15,7 @@ body
 
 #page
 {
-	margin-top: 5px;
+	margin-top: 0px;
 	margin-bottom: 5px;
 	background: white;
 }
@@ -364,4 +364,14 @@ div.search-form
     	height: 30px;
     	left: 0px;
     }
+}
+
+#menu-link-effect{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+#menu-link-effect a{
+    color: white
 }

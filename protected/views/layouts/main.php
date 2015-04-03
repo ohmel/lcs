@@ -9,7 +9,11 @@
 
     <!-- modernizr -->
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/linkeffects/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/linkeffects/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/linkeffects/css/component.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/css/component.css" />
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/includes/linkeffects/js/modernizr.custom.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/js/modernizr.custom.js"></script>
 
     <!-- elastic -->
@@ -91,42 +95,49 @@
 
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+
+    <style type="text/css">
+
+        #menu-link-effect a {
+            font-family: 'Raleway', sans-serif;
+            position: relative;
+            display: inline-block;
+            margin: 15px 25px;
+            outline: none;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            text-shadow: 0 0 1px rgba(255,255,255,0.3);
+            font-size: 1.35em;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            outline: none;
+        }
+    </style>
 </head>
 
 <body>
-
+<div id="menu-link-effect">
+    <section class="color-1">
+        <nav class="cl-effect-1">
+            <?php echo CHtml::link("Home", array('site/index')) ?>
+            <?php echo CHtml::link("School Setup", array('site/index')) ?>
+            <?php echo CHtml::link("Settings", array('site/admin#/userManagement')) ?>
+            <?php echo CHtml::link("Logout", array('site/logout')) ?>
+        </nav>
+    </section>
+    <!-- mainmenu -->
+</div>
+<br/>
+<br/>
+<br/>
 <div class="container-fluid" id="page">
     <?php if (!Yii::app()->user->isGuest) { ?>
-        <div>
-            <div id="header">
-                <div id="logo">School Management System</div>
-            </div>
-            <!-- header -->
-            <div id="mainmenu">
-                <?php
-                $this->widget('zii.widgets.CMenu', array(
-                    'items' => array(
-                        array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest),
-                        array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
-//                        array('label' => 'Contact', 'url' => array('/site/contact')),
-//                        array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
-                        array('label' => 'School Setup', 'url' => array('/site/players'), 'visible' => !Yii::app()->user->isGuest),
-                        array('label' => 'Settings', 'url' => array('/site/admin#/userManagement'), 'visible' => !Yii::app()->user->isGuest),
-                        array('label' => 'Home', 'url' => array('/site/index'), 'visible' => !Yii::app()->user->isGuest),
-                    ),
-                ));
-                ?>
-            </div>
-            <!-- mainmenu -->
-        </div>
 
-        <?php if (isset($this->breadcrumbs)): ?>
-            <?php
-            $this->widget('zii.widgets.CBreadcrumbs', array(
-                'links' => $this->breadcrumbs,
-            ));
-            ?><!-- breadcrumbs -->
-        <?php endif ?>
     <?php } else { ?>
         <br/>
         <br/>
