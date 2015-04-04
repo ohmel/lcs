@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/css/sidebar.css" />
+
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/js/snap.svg-min.js"></script>
 
     <!-- blueprint CSS framework -->
@@ -152,6 +153,7 @@
     <div class="clear"></div>
     <?php if (!Yii::app()->user->isGuest) { ?>
         <div id="footer">
+
         </div>
     <?php } ?>
     <!-- footer -->
