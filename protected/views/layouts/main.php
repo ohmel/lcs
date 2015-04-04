@@ -8,19 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
     <!-- modernizr -->
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/css/default.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/linkeffects/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/linkeffects/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/linkeffects/css/component.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/css/component.css" />
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/css/default.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo Yii::app()->request->baseUrl; ?>/includes/linkeffects/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo Yii::app()->request->baseUrl; ?>/includes/linkeffects/css/demo.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo Yii::app()->request->baseUrl; ?>/includes/linkeffects/css/component.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/css/component.css"/>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/includes/linkeffects/js/modernizr.custom.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/includes/caption/js/modernizr.custom.js"></script>
 
     <!-- elastic -->
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/css/sidebar.css" />
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/fonts/font-awesome-4.2.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/css/demo.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/css/sidebar.css"/>
 
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/includes/elastic/js/snap.svg-min.js"></script>
 
@@ -62,10 +71,10 @@
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/app.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/routing.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/site/controllers/siteController.js"></script>
-    <script
-        src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/controllers/userManagerController.js"></script>
-    <script
-        src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/controllers/addUserController.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/controllers/userManagerController.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/controllers/addUserController.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/controllers/admissionController.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/services/admissionService.js"></script>
 
     <!-- Angular Injectors -->
     <script
@@ -93,8 +102,6 @@
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/bootstrap/js/collapse.js"></script>
 
 
-
-
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
     <style type="text/css">
@@ -110,7 +117,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             font-weight: 400;
-            text-shadow: 0 0 1px rgba(255,255,255,0.3);
+            text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
             font-size: 1.35em;
         }
 
@@ -136,6 +143,7 @@
 <br/>
 <br/>
 <br/>
+
 <div class="container-fluid" id="page">
     <?php if (!Yii::app()->user->isGuest) { ?>
 
