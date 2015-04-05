@@ -7,6 +7,7 @@
 app.controller('AdmissionController', function($scope, Globals, ngNotify, ngDialog, admissionService) {
     $('i').tooltip();
     $scope.admissionService = admissionService;
+    $scope.globals = Globals;
     admissionService.fetchStudents(
         function (success) {
             admissionService.students = success.data;

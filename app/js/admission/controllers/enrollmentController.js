@@ -6,5 +6,6 @@
 
 app.controller('EnrollmentController', function($scope, Globals, ngNotify, ngDialog) {
     $('i').tooltip();
+    $scope.globals = Globals;
 });
 
