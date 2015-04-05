@@ -11,17 +11,16 @@ class AdmissionController extends RestController
         $this->render('admission');
     }
 
-    public function fetchUsers()
+    public function fetchStudents()
     {
-        $usersArray = array();
-        $users = LcsUsers::model()->findAll();
+        $studentsArray = array();
+        $students = LcsStudent::model()->findAll();
         $index = 0;
-        foreach ($users as $user) {
-            $gamesArray[$index] = $user->attributes;
-            unset($gamesArray[$index]['user_password']);
+        foreach ($students as $student) {
+            $studentsArray[$index] = $student->attributes;
             $index++;
         }
-        return $gamesArray;
+        return $studentsArray;
 
     }
 
@@ -47,8 +46,8 @@ class AdmissionController extends RestController
 
     public function restEvents()
     {
-        $this->onRest('req.get.fetchUsers.render', function () {
-            echo $this->restJsonEncode($this->fetchUsers());
+        $this->onRest('req.get.fetchStudents.render', function () {
+            echo $this->restJsonEncode($this->fetchStudents());
         });
         $this->onRest('req.post.addUser.render', function ($data) {
             $userData = $data;

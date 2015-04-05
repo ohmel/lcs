@@ -15,6 +15,7 @@
         position: static;
         width: 260px;
     }
+
 </style>
 <div ng-controller="SiteController" class="">
     <div class="col-lg-2">

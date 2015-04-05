@@ -8,9 +8,9 @@
                 <span style="font-size: 11px">School Management System</span>
                 <br/>
                 <div style="color: white; font-size: 11px; margin-top: 5px">
-                    Enrollment, Course Placement, and, Syllabi's
+                    Enrollment, Conduct Tests, and Course Placement
                 </div>
-                <a href="http://dribbble.com/shots/1116775-Safari">Student Enrollment</a>
+                <?php echo CHtml::link("Enter Admissions", array('admission/index')) ?>
             </figcaption>
         </figure>
     </li>

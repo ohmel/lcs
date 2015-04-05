@@ -1,28 +1,28 @@
-app.service('AdmissionService', function ($http, Globals) {
+app.service('admissionService', function ($http, Globals) {
 
     "use strict";
 
     var url = Globals.rootUrl+"index.php/api/",
-        users = [],
-        fetchUsers = function (callback, errback) {
+        students = [],
+        fetchStudents = function (callback, errback) {
             $http({
                 method: 'GET',
-                url: url+'user/fetchUsers'
+                url: url+'admission/fetchStudents'
             }).success(callback).error(errback);
         },
-        addUser = function(callback, errback, user){
+        addUser = function(callback, errback, students){
             $http({
                 method: 'POST',
                 url: url+'user/addUser',
-                data: user
+                data: students
             }).success(callback).error(errback);
         };
 
 
 
     return {
-        users: users,
-        fetchUsers: fetchUsers,
+        students: students,
+        fetchStudents: fetchStudents,
         addUser: addUser
     };
 });

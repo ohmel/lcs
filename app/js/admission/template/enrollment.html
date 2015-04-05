@@ -1,0 +1,101 @@
+<style type="text/css">
+
+    #menu-link-effect-inner a {
+        font-family: 'Raleway', sans-serif;
+        position: relative;
+        display: inline-block;
+        margin: 0px 10px;
+        outline: none;
+        color: #435A6B;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+        font-size: 1.10em;
+    }
+
+    nav a:hover,
+    nav a:focus {
+        outline: none;
+    }
+</style>
+<div id="menu-link-effect-inner">
+    <section class="color-1" style="background: white; text-align: left">
+        <nav class="cl-effect-7">
+            <a href="#/enrollment" role="button">Student List</a>
+            <a href="#" role="button">Admit a student</a>
+            <a href="#" role="button">Receive Requirements</a>
+        </nav>
+    </section>
+    <!-- mainmenu -->
+</div>
+<hr/>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default row" ng-repeat="student in admissionService.students">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <div class="col-lg-4" style="text-align: left">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" onclick="return false;"
+                       href="#enrollment{{student.student_id}}" aria-expanded="true"
+                       aria-controls="enrollment{{student.student_id}}">
+                        <strong style="font-size: 20px;">{{student.student_firstname}} {{student.student_lastname}}</strong>
+                    <span style="color: limegreen;font-size: 20px; " ng-if="student.student_status == 1"
+                          class="glyphicon glyphicon-ok"></span>
+                    <span style="color: red;font-size: 20px; " ng-if="student.student_status == 0"
+                          class="glyphicon glyphicon-remove"></span>
+                    </a>
+                    <br/>
+                    {{student.student_gender}}
+                    <br/>
+                </h4>
+            </div>
+            <div class="col-lg-8" style="text-align: right">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default"><span style="font-size: 24px;"
+                                                                        class="glyphicon glyphicon-edit"></span>
+                    </button>
+                    <button type="button" class="btn btn-default"><span style="font-size: 24px; color: red; "
+                                                                        class="glyphicon glyphicon-remove"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+        <div id="enrollment{{student.student_id}}" class="panel-collapse collapse" role="tabpanel"
+             aria-labelledby="headingOne">
+            <div class="panel-body">
+                <h4>User Access</h4>
+                <table class="table">
+                    <tr class="success">
+                        <th scope="row">Admissions</th>
+                        <td><input type="checkbox"> Add Student</td>
+                        <td><input type="checkbox"> Edit Student</td>
+                        <td><input type="checkbox"> Delete Student</td>
+                    </tr>
+                    <tr class="info">
+                        <th scope="row">Registrar</th>
+                        <td><input type="checkbox"> Access1</td>
+                        <td><input type="checkbox"> Access2</td>
+                        <td><input type="checkbox"> Access3</td>
+                    </tr>
+                    <tr class="warning">
+                        <th scope="row">Library</th>
+                        <td><input type="checkbox"> Access1</td>
+                        <td><input type="checkbox"> Access2</td>
+                        <td><input type="checkbox"> Access3</td>
+                    </tr>
+                    <tr class="danger">
+                        <th scope="row">Finance</th>
+                        <td><input type="checkbox"> Access1</td>
+                        <td><input type="checkbox"> Access2</td>
+                        <td><input type="checkbox"> Access3</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -369,7 +369,7 @@ div.search-form
 #menu-link-effect{
     position: fixed;
     width: 100%;
-    text-align: center;
+    text-align: right;
     z-index: 1000;
 }
 #menu-link-effect a{

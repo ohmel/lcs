@@ -12,8 +12,18 @@ app.config(['$locationProvider', '$routeProvider',
                 controller: 'AddUserController',
                 currentRoute: 'addUser'
             }).
+            when('/enrollment', {
+                templateUrl: '../../app/js/admission/template/enrollment.html',
+                controller: 'AdmissionController',
+                currentRoute: 'enrollment'
+            }).
+            when('/', {
+                templateUrl: '../../app/js/admission/template/admission.html',
+                controller: 'AddUserController',
+                currentRoute: 'addUser'
+            }).
             otherwise({
-                redirectTo: '/error'
+                redirectTo: '/'
             });
     }]);
 

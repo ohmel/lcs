@@ -8,6 +8,7 @@
 ?>
 <style>
     a {
+
         text-decoration: none !important;
     }
 
@@ -15,14 +16,23 @@
         margin-bottom: 35px !important;
     }
 
-    i {
-        color: #002954 !important;
+    i{
+        vertical-align: middle !important;
+    }
+
+    .menu span{
+        font-family: 'Raleway', sans-serif !important;
+        font-size: 16px !important;
+        color: #5F656F;
+        font-weight: 100 !important;
+        vertical-align: middle !important;
     }
 
     .nav-menu-pos-stat {
         position: static;
         width: 260px;
     }
+
 </style>
 <div ng-controller="SiteController" class="">
     <div class="col-lg-2">
@@ -35,20 +45,24 @@
             <button class="menu__handle" style="background: white"><span>Menu</span></button>
             <div class="menu__inner">
                 <ul>
-                    <li><a href="#/userManagement" style="text-decoration: none !important;"><i class="fa fa-fw fa-user"
-                                                                                                data-toggle="tooltip"
-                                                                                                data-placement="bottom"
-                                                                                                title="User Management"></i></a>
+                    <li>
+                        <a href="#/enrollment"><i class="fa fa-fw fa-user"></i>
+                            <span>Enrollment</span>
+                        </a>
                     </li>
-                    <li><a href="#"><i class="fa fa-fw fa-file-o" data-toggle="tooltip" data-placement="bottom"
-                                       title="Policies"></i></a></li>
-                    <li><a href="#"><i class="fa fa-fw fa-folder"></i></a></li>
-                    <li><a href="#"><i class="fa fa-fw fa-wrench" data-toggle="tooltip" data-placement="bottom"
-                                       title="Settings"></i></a></li>
-                    <li><a href="#"><i class="fa fa-fw fa-wrench" data-toggle="tooltip" data-placement="bottom"
-                                       title="Settings"></i></a></li>
-                    <li><a href="#"><i class="fa fa-fw fa-wrench" data-toggle="tooltip" data-placement="bottom"
-                                       title="Settings"></i></a></li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-file-o"></i>
+                            <span>Tests</span>
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-fw fa-mortar-board"></i>
+                            <span>Course List</span>
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-fw fa-cogs"></i>
+                            <span>Settings</span>
+                        </a></li>
+
                 </ul>
             </div>
             <div class="morph-shape" data-morph-open="M300-10c0,0,295,164,295,410c0,232-295,410-295,410"

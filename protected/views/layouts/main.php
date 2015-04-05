@@ -74,7 +74,7 @@
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/controllers/userManagerController.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/controllers/addUserController.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/controllers/admissionController.js"></script>
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/services/admissionService.js"></script>
+
 
     <!-- Angular Injectors -->
     <script
@@ -88,6 +88,7 @@
     <!-- Angular Services -->
     <script
         src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/services/userManagerService.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/services/admissionService.js"></script>
 
     <!-- Angular Factories -->
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/factories/globals.js"></script>
@@ -110,7 +111,7 @@
             font-family: 'Raleway', sans-serif;
             position: relative;
             display: inline-block;
-            margin: 15px 25px;
+            margin: 10px 10px;
             outline: none;
             color: #fff;
             text-decoration: none;
@@ -118,7 +119,7 @@
             letter-spacing: 1px;
             font-weight: 400;
             text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-            font-size: 1.35em;
+            font-size: 1.10em;
         }
 
         nav a:hover,
@@ -159,11 +160,6 @@
     <?php echo $content; ?>
 
     <div class="clear"></div>
-    <?php if (!Yii::app()->user->isGuest) { ?>
-        <div id="footer">
-
-        </div>
-    <?php } ?>
     <!-- footer -->
 
 </div>

@@ -2085,3 +2085,16 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/lcs/index.php/site/gii
 ---
+2015/04/04 19:59:27 [error] [exception.CHttpException.503] exception 'CHttpException' with message 'Forbidden Resource' in C:\xampp\htdocs\lcs\protected\controllers\SiteController.php:50
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionAdmin()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/admin')
+#6 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/lcs/index.php/site/admin
+---
