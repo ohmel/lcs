@@ -14,31 +14,34 @@ class AdmissionController extends RestController
     public function fetchStudents()
     {
         $studentsArray = array();
-        $students = LcsStudent::model()->findAll();
+        $students = LcsStudent::model()->with("address", "contact", "background", "requirement")->inactive()->findAll();
+
         $index = 0;
         foreach ($students as $student) {
             $studentsArray[$index] = $student->attributes;
+            $studentsArray[$index]["studentAddress"] = $student->address->attributes;
+            $contacts = $student->contact;
+            foreach($contacts as $contact){
+                $studentsArray[$index]["contactDetails"][] = $contact->attributes;
+            }
+            $backgrounds = $student->background;
+            foreach($backgrounds as $background){
+                $studentsArray[$index]["educationalBackground"][] = $background->attributes;
+            }
+            $requirements = $student->requirement;
+            foreach($requirements as $requirement){
+                $studentsArray[$index]["studentRequirements"][] = $requirement->attributes;
+            }
             $index++;
         }
         return $studentsArray;
-
     }
 
-    public function addUser($userData)
+    public function addStudent($studentData)
     {
         try {
-            $user = new LcsUsers();
-            $user->user_fullname = $userData['user_fullname'];
-            $user->user_name = $userData['user_name'];
-            $user->user_password = md5($userData['user_password']);
-            $user->user_type = $userData['user_type'];
-            $user->user_status = 1;
-            if(!$user->save()){
-                throw new CHttpException(500, "User is not registered");
-            }
-            $userData = $user->attributes;
-            unset($userData['user_password']);
-            return $userData;
+//          TODO: Put add code in here...
+            return $studentData;
         } catch (Exception $e) {
             throw new CHttpException(500, $e->getMessage());
         }
@@ -49,9 +52,9 @@ class AdmissionController extends RestController
         $this->onRest('req.get.fetchStudents.render', function () {
             echo $this->restJsonEncode($this->fetchStudents());
         });
-        $this->onRest('req.post.addUser.render', function ($data) {
+        $this->onRest('req.post.addStudent.render', function ($data) {
             $userData = $data;
-            echo $this->restJsonEncode($this->addUser($userData));
+            echo $this->restJsonEncode($this->addStudent($userData));
         });
     }
 }

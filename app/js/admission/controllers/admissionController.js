@@ -12,7 +12,7 @@ app.controller('AdmissionController', function($scope, Globals, ngNotify, ngDial
         function (success) {
             admissionService.students = success.data;
             $scope.loader = 1;
-            ngNotify.set("Successfully loaded all students", 'info');
+            ngNotify.set("Successfully loaded all Applicants", 'info');
         }, function (error) {
             ngNotify.set(error.message, 'error');
         });

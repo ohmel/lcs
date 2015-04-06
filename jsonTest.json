@@ -1,41 +1,77 @@
 {
-    "routes": {
-        "/userManagement": {
-            "templateUrl": "../../app/js/userManager/template/userManager.html",
-            "controller": "UserManagerController",
-            "reloadOnSearch": true,
-            "caseInsensitiveMatch": false,
-            "originalPath": "/userManagement",
-            "regexp": {},
-            "keys": []
+    "success": "true", "message": "Record(s) found", "data": [
+    {
+        "student_id": "1",
+        "student_number": "2005-100102",
+        "student_firstname": "Ohmel",
+        "student_lastname": "Paguirigan",
+        "student_middlename": "Cunanan",
+        "student_gender": "male",
+        "student_birthdate": "1988-02-16",
+        "student_age": "27",
+        "student_complexion": "brown",
+        "student_eye_color": "black",
+        "student_height": "5'6''",
+        "student_religion": "Christian",
+        "course_id": "1",
+        "student_status": "0",
+        "student_bloodtype": "O+",
+        "student_nationality": "Filipino",
+        "student_language": "Tagalog, English",
+        "studentAddress": {
+            "address_id": "1",
+            "address_details": "Blk 29 San Lorenzo Ruiz",
+            "address_street": "Blk 29",
+            "address_province": "Rizal",
+            "address_city": "Taytay",
+            "address_country": "Philippines",
+            "address_zip": "1920",
+            "student_id": "1"
         },
-        "/userManagement/": {
-            "redirectTo": "/userManagement",
-            "originalPath": "/userManagement/",
-            "regexp": {},
-            "keys": []
-        },
-        "/addUser": {
-            "templateUrl": "../../app/js/userManager/template/addUser.html",
-            "controller": "UserManagerController",
-            "currentRoute": "addUser",
-            "reloadOnSearch": true,
-            "caseInsensitiveMatch": false,
-            "originalPath": "/addUser",
-            "regexp": {},
-            "keys": []
-        },
-        "/addUser/": {"redirectTo": "/addUser", "originalPath": "/addUser/", "regexp": {}, "keys": []},
-        "null": {"redirectTo": "/error", "reloadOnSearch": true, "caseInsensitiveMatch": false}
-    },
-    "current": {
-        "params": {},
-        "pathParams": {},
-        "loadedTemplateUrl": "../../app/js/userManager/template/addUser.html",
-        "locals": {
-            "$template": "<nav class=\"navbar navbar-default\">\r\n    <div class=\"container-fluid\">\r\n        <!-- Brand and toggle get grouped for better mobile display -->\r\n        <div class=\"navbar-header\">\r\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\"\r\n                    data-target=\"#bs-example-navbar-collapse-1\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" href=\"#\">User List</a>\r\n        </div>\r\n\r\n        <!-- Collect the nav links, forms, and other content for toggling -->\r\n        <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\r\n            <ul class=\"nav navbar-nav navbar-left\">\r\n                <li>\r\n                    <a href=\"#/addUser\" class=\"navbar-link\">\r\n                        Add User\r\n                    </a>\r\n                </li>\r\n            </ul>\r\n            <form class=\"navbar-form navbar-right\" role=\"search\">\r\n                <div class=\"form-group\">\r\n                    <input type=\"text\" ng-model=\"q\" class=\"form-control\" placeholder=\"Search User\">\r\n                </div>\r\n            </form>\r\n\r\n        </div>\r\n        <!-- /.navbar-collapse -->\r\n    </div>\r\n    <!-- /.container-fluid -->\r\n</nav>\r\n<div ng-hide=\"loader == 1\">\r\n    <div class=\"wobblebar\">\r\n        Loading...\r\n    </div>\r\n    <br/>\r\n    Almost there...\r\n</div>\r\n<pre>$location.path() = {{$location}}</pre>\r\n<pre>$route.current.templateUrl = {{$route.current.templateUrl}}</pre>\r\n<pre>$route.current.params = {{$route}}</pre>\r\n<pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>\r\n<pre>$routeParams = {{$routeParams}}</pre>",
-            "$scope": "$SCOPE"
-        },
-        "scope": "$SCOPE"
-    }
-}
+        "contactDetails": [
+            {
+                "contact_id": "1",
+                "contact_name": "Cynthia Paguirigan",
+                "contact_relationship": "Mother",
+                "contact_mobile": "09198999095",
+                "contact_tel": "6429163",
+                "contact_address": "Blk 29 lot 8 san juan homes
+                taytay rizal
+                ","student_id
+                ":"1
+                "}],"educationalBackground
+                ":[{"educ_id
+                ":"1
+                ","educ_school_name
+                ":"Rizal
+                High
+                    School
+                Sagad","
+                educ_school_type":"
+                High School
+                ","educ_school_address
+                ":"Sagad
+                Pasig City
+                ","educ_years_attended
+                ": "4",
+                "educ_fromto_date": "2001 - 2005",
+                "educ_extracurricular": "COCC",
+                "educ_position": "Private",
+                "educ_achievements": "Nothing",
+                "student_id": "1"
+            }
+        ],
+        "studentRequirements": [
+            {
+                "requirement_id": "1",
+                "requirement_doc": "Report
+                Card","
+                requirement_date_passed":"
+                2015-04 - 06
+                ","requirement_remarks
+                ":"High
+                School Report
+                Card","
+                student_id"
+:"1"},{"requirement_id":"2","requirement_doc":"Good Moral","requirement_date_passed":"2015-04-06","requirement_remarks"
+:"High School Issue","student_id":"1"}]}]}

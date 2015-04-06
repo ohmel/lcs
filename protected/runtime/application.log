@@ -2505,3 +2505,670 @@ Stack trace:
 REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
 HTTP_REFERER=http://localhost/lcs/index.php/admission/index
 ---
+2015/04/06 16:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 16:27:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 16:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 16:28:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 16:32:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:00:48 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "student" is not defined in active record class "LcsStudent".' in C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php:215
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(310): CActiveFinder->buildJoinTree(Object(CJoinElement), 'student')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1291): CActiveFinder->__construct(Object(LcsStudent), Array)
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(17): CActiveRecord->findAll()
+#5 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(41): AdmissionController->fetchStudents()
+#6 [internal function]: AdmissionController->{closure}(NULL, NULL)
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.get.fetchSt...', Array)
+#9 [internal function]: ERestBehavior->emitRest('req.get.fetchSt...', Array)
+#10 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): CComponent->__call('emitRest', Array)
+#12 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->emitRest('req.get.fetchSt...', Array)
+#13 [internal function]: EActionRestGET->{closure}(Array, Array)
+#14 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#15 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#16 [internal function]: EActionRestGET->run('fetchStudents', NULL, NULL)
+#17 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#18 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#21 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#27 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#28 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#29 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/lcs/index.php/api/admission/fetchStudents
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:00:57 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "student" is not defined in active record class "LcsStudent".' in C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php:215
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(310): CActiveFinder->buildJoinTree(Object(CJoinElement), 'student')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1291): CActiveFinder->__construct(Object(LcsStudent), Array)
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(17): CActiveRecord->findAll()
+#5 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(41): AdmissionController->fetchStudents()
+#6 [internal function]: AdmissionController->{closure}(NULL, NULL)
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.get.fetchSt...', Array)
+#9 [internal function]: ERestBehavior->emitRest('req.get.fetchSt...', Array)
+#10 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): CComponent->__call('emitRest', Array)
+#12 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->emitRest('req.get.fetchSt...', Array)
+#13 [internal function]: EActionRestGET->{closure}(Array, Array)
+#14 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#15 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#16 [internal function]: EActionRestGET->run('fetchStudents', NULL, NULL)
+#17 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#18 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#21 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#27 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#28 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#29 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/lcs/index.php/api/admission/fetchStudents
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:00:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:01:22 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#2 unknown(0): ERestBehavior->emitRest()
+#3 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array()
+#4 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->__call()
+#5 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->emitRest()
+#6 unknown(0): EActionRestGET->{closure}()
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array()
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): EActionRestGET->finalRender()
+#9 unknown(0): EActionRestGET->run()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): EActionRestGET->runWithParamsInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): EActionRestGET->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): AdmissionController->runAction()
+#14 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): ERestFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): AdmissionController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): AdmissionController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\lcs\index.php(13): CWebApplication->run()
+REQUEST_URI=/lcs/index.php/api/admission/fetchStudents
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (18)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (41)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/06 17:01:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:03:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:07:03 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#2 unknown(0): ERestBehavior->emitRest()
+#3 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array()
+#4 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->__call()
+#5 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->emitRest()
+#6 unknown(0): EActionRestGET->{closure}()
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array()
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): EActionRestGET->finalRender()
+#9 unknown(0): EActionRestGET->run()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): EActionRestGET->runWithParamsInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): EActionRestGET->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): AdmissionController->runAction()
+#14 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): ERestFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): AdmissionController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): AdmissionController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\lcs\index.php(13): CWebApplication->run()
+REQUEST_URI=/lcs/index.php/api/admission/fetchStudents
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (18)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (41)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/06 17:07:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:10:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:11:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:25:31 [error] [exception.CException] exception 'CException' with message 'Property "LcsStudent.studentAddresses" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('studentAddresse...')
+#1 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(23): CActiveRecord->__get('studentAddresse...')
+#2 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(43): AdmissionController->fetchStudents()
+#3 [internal function]: AdmissionController->{closure}(NULL, NULL)
+#4 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#5 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.get.fetchSt...', Array)
+#6 [internal function]: ERestBehavior->emitRest('req.get.fetchSt...', Array)
+#7 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): CComponent->__call('emitRest', Array)
+#9 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->emitRest('req.get.fetchSt...', Array)
+#10 [internal function]: EActionRestGET->{closure}(Array, Array)
+#11 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#12 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#13 [internal function]: EActionRestGET->run('fetchStudents', NULL, NULL)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#18 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#23 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#25 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/lcs/index.php/api/admission/fetchStudents
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:25:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:27:21 [error] [exception.CException] exception 'CException' with message 'Property "LcsStudent.studentAddresses" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('studentAddresse...')
+#1 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(23): CActiveRecord->__get('studentAddresse...')
+#2 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(43): AdmissionController->fetchStudents()
+#3 [internal function]: AdmissionController->{closure}(NULL, NULL)
+#4 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#5 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.get.fetchSt...', Array)
+#6 [internal function]: ERestBehavior->emitRest('req.get.fetchSt...', Array)
+#7 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): CComponent->__call('emitRest', Array)
+#9 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->emitRest('req.get.fetchSt...', Array)
+#10 [internal function]: EActionRestGET->{closure}(Array, Array)
+#11 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#12 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#13 [internal function]: EActionRestGET->run('fetchStudents', NULL, NULL)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#18 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#23 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#25 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/lcs/index.php/api/admission/fetchStudents
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:27:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:29:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:29:53 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#2 unknown(0): ERestBehavior->emitRest()
+#3 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array()
+#4 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->__call()
+#5 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->emitRest()
+#6 unknown(0): EActionRestGET->{closure}()
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array()
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): EActionRestGET->finalRender()
+#9 unknown(0): EActionRestGET->run()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): EActionRestGET->runWithParamsInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): EActionRestGET->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): AdmissionController->runAction()
+#14 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): ERestFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): AdmissionController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): AdmissionController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\lcs\index.php(13): CWebApplication->run()
+REQUEST_URI=/lcs/index.php/api/admission/fetchStudents
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (21)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (43)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/06 17:29:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:30:41 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#2 unknown(0): ERestBehavior->emitRest()
+#3 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array()
+#4 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->__call()
+#5 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->emitRest()
+#6 unknown(0): EActionRestGET->{closure}()
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array()
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): EActionRestGET->finalRender()
+#9 unknown(0): EActionRestGET->run()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): EActionRestGET->runWithParamsInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): EActionRestGET->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): AdmissionController->runAction()
+#14 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): ERestFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): AdmissionController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): AdmissionController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\lcs\index.php(13): CWebApplication->run()
+REQUEST_URI=/lcs/index.php/api/admission/fetchStudents
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (21)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (43)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/06 17:30:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:35:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:42:53 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:23)
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#2 unknown(0): ERestBehavior->emitRest()
+#3 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array()
+#4 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->__call()
+#5 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->emitRest()
+#6 unknown(0): EActionRestGET->{closure}()
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array()
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): EActionRestGET->finalRender()
+#9 unknown(0): EActionRestGET->run()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): EActionRestGET->runWithParamsInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): EActionRestGET->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): AdmissionController->runAction()
+#14 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): ERestFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): AdmissionController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): AdmissionController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\lcs\index.php(13): CWebApplication->run()
+REQUEST_URI=/lcs/index.php/api/admission/fetchStudents
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (23)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (44)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/06 17:42:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:44:04 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:23)
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#2 unknown(0): ERestBehavior->emitRest()
+#3 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array()
+#4 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->__call()
+#5 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->emitRest()
+#6 unknown(0): EActionRestGET->{closure}()
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array()
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): EActionRestGET->finalRender()
+#9 unknown(0): EActionRestGET->run()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): EActionRestGET->runWithParamsInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): EActionRestGET->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): AdmissionController->runAction()
+#14 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): ERestFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): AdmissionController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): AdmissionController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\lcs\index.php(13): CWebApplication->run()
+REQUEST_URI=/lcs/index.php/api/admission/fetchStudents
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (23)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (44)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/06 17:44:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:44:50 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:24)
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#2 unknown(0): ERestBehavior->emitRest()
+#3 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array()
+#4 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->__call()
+#5 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->emitRest()
+#6 unknown(0): EActionRestGET->{closure}()
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array()
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): EActionRestGET->finalRender()
+#9 unknown(0): EActionRestGET->run()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): EActionRestGET->runWithParamsInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): EActionRestGET->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): AdmissionController->runAction()
+#14 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): ERestFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): AdmissionController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): AdmissionController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\lcs\index.php(13): CWebApplication->run()
+REQUEST_URI=/lcs/index.php/api/admission/fetchStudents
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (24)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (44)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/06 17:44:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:46:08 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:24)
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#2 unknown(0): ERestBehavior->emitRest()
+#3 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array()
+#4 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->__call()
+#5 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(38): AdmissionController->emitRest()
+#6 unknown(0): EActionRestGET->{closure}()
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array()
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): EActionRestGET->finalRender()
+#9 unknown(0): EActionRestGET->run()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): EActionRestGET->runWithParamsInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): EActionRestGET->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): AdmissionController->runAction()
+#14 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): ERestFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): AdmissionController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): AdmissionController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\lcs\index.php(13): CWebApplication->run()
+REQUEST_URI=/lcs/index.php/api/admission/fetchStudents
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (24)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (44)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/06 17:46:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 17:57:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 18:01:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---

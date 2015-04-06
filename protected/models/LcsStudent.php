@@ -76,10 +76,10 @@ class LcsStudent extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'lcsStudentAddresses' => array(self::HAS_ONE, 'LcsStudentAddress', 'student_id'),
-			'lcsStudentContactDetails' => array(self::HAS_MANY, 'LcsStudentContactDetails', 'student_id'),
-			'lcsStudentEducationalBackgrounds' => array(self::HAS_MANY, 'LcsStudentEducationalBackground', 'student_id'),
-			'lcsStudentRequirements' => array(self::HAS_MANY, 'LcsStudentRequirements', 'student_id'),
+			'address' => array(self::HAS_ONE, 'LcsStudentAddress', 'student_id'),
+			'contact' => array(self::HAS_MANY, 'LcsStudentContactDetails', 'student_id'),
+            'requirement' => array(self::HAS_MANY, 'LcsStudentRequirements', 'student_id'),
+            'background' => array(self::HAS_MANY, 'LcsStudentEducationalBackground', 'student_id'),
 		);
 	}
 
@@ -142,4 +142,26 @@ class LcsStudent extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+    public function scopes()
+    {
+        return array(
+            'inactive'=>array(
+                'condition'=>'student_status=0',
+            ),
+            'active'=>array(
+                'condition'=>'student_status=1',
+            ),
+            'dropout'=>array(
+                'condition'=>'student_status=2',
+            ),
+            'kickedout'=>array(
+                'condition'=>'student_status=3',
+            ),
+            'awol'=>array(
+                'condition'=>'student_status=4',
+            ),
+        );
+    }
+
 }
