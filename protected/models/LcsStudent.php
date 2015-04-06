@@ -76,7 +76,7 @@ class LcsStudent extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'lcsStudentAddresses' => array(self::HAS_MANY, 'LcsStudentAddress', 'student_id'),
+			'lcsStudentAddresses' => array(self::HAS_ONE, 'LcsStudentAddress', 'student_id'),
 			'lcsStudentContactDetails' => array(self::HAS_MANY, 'LcsStudentContactDetails', 'student_id'),
 			'lcsStudentEducationalBackgrounds' => array(self::HAS_MANY, 'LcsStudentEducationalBackground', 'student_id'),
 			'lcsStudentRequirements' => array(self::HAS_MANY, 'LcsStudentRequirements', 'student_id'),
