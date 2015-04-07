@@ -19,6 +19,12 @@
     nav a:focus {
         outline: none;
     }
+    h4{
+        padding-left: 10px !important;
+    }
+    .panel-title{
+        padding-left: 0px !important;
+    }
 </style>
 <h2 style="margin: 0px">Enrollment</h2>
 <br/>
@@ -81,6 +87,10 @@
 
                         <p><strong>Age: </strong> {{student.student_age}} </p>
 
+                        <p><strong>Height: </strong> {{student.student_height}}  <strong>Complexion: </strong> {{student.student_complexion}} </p>
+
+                        <p><strong>Eye Color: </strong> {{student.student_eye_color}}  <strong>Blood Type: </strong> {{student.student_bloodtype}} </p>
+
                         <p><strong>Nationality: </strong> {{student.student_nationality}} </p>
 
                         <p><strong>Language: </strong> {{student.student_language}} </p>
@@ -88,18 +98,15 @@
                         <p><strong>Religion: </strong> {{student.student_religion}} </p>
 
                         <p><strong>Skills: </strong>
-                            <span class="label label-info tags">html5</span>
-                            <span class="label label-info tags">css3</span>
-                            <span class="label label-info tags">jquery</span>
-                            <span class="label label-info tags">bootstrap3</span>
+                            <span ng-repeat="skill in student.studentSkills" class="label label-info tags" style="margin-right: 5px">{{skill.skill_name}}</span>
                         </p>
 
                         <p>
                         <address>
                             <strong>Address</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                            {{student.studentAddress.address_street}} {{student.studentAddress.address_details}},<br>
+                            {{student.studentAddress.address_city}} {{student.studentAddress.address_province}}<br>
+                            {{student.studentAddress.address_country}} {{student.studentAddress.address_zip}}<br>
                         </address>
                         </p>
 
@@ -111,6 +118,60 @@
                              alt="" class="center-block img-circle img-responsive">
 
                     </div>
+                    <hr/>
+                    <h4> Educational Background</h4>
+                    <table class="table table-striped">
+                        <tr class="success">
+                            <th scope="row">School Name</th>
+                            <th scope="row">School Type</th>
+                            <th scope="row">School Address</th>
+                            <th scope="row">Year attended</th>
+                            <th scope="row">From to Year</th>
+                            <th scope="row">Extra Curricular</th>
+                            <th scope="row">Position</th>
+                            <th scope="row">Award</th>
+                        </tr>
+                        <tr ng-repeat="background in student.educationalBackground">
+                            <td><i class="fa fa-fw fa-building-o"></i> {{background.educ_school_name}}</td>
+                            <td>{{background.educ_school_type}}</td>
+                            <td>{{background.educ_school_address}}</td>
+                            <td>{{background.educ_years_attended}}</td>
+                            <td>{{background.educ_fromto_date}}</td>
+                            <td>{{background.educ_extracurricular}}</td>
+                            <td>{{background.educ_position}}</td>
+                            <td>{{background.educ_achievements}}</td>
+                        </tr>
+                    </table>
+                    <h4> Passed Documents</h4>
+                    <table class="table table-striped">
+                        <tr class="success">
+                            <th scope="row">Document</th>
+                            <th scope="row">Date Submitted</th>
+                            <th scope="row">Remarks</th>
+                        </tr>
+                        <tr ng-repeat="requirement in student.studentRequirements">
+                            <td><i class="fa fa-fw fa-file-o"></i> {{requirement.requirement_doc}}</td>
+                            <td>{{requirement.requirement_date_passed}}</td>
+                            <td>{{requirement.requirement_remarks}}</td>
+                        </tr>
+                    </table>
+                    <h4> In case of emergency please contact...</h4>
+                    <table class="table table-striped">
+                        <tr class="success">
+                            <th scope="row">Name</th>
+                            <th scope="row">Relationship</th>
+                            <th scope="row">Mobile No.</th>
+                            <th scope="row">Tel No.</th>
+                            <th scope="row">Address</th>
+                        </tr>
+                        <tr ng-repeat="contact in student.contactDetails">
+                            <td><i class="fa fa-fw fa-user"></i> {{contact.contact_name}}</td>
+                            <td>{{contact.contact_relationship}}</td>
+                            <td>{{contact.contact_mobile}}</td>
+                            <td>{{contact.contact_tel}}</td>
+                            <td>{{contact.contact_address}}</td>
+                        </tr>
+                    </table>
                     <hr/>
                     <!--/col-->
 

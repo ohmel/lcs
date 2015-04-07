@@ -3172,3 +3172,311 @@ Stack trace:
 REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
 HTTP_REFERER=http://localhost/lcs/index.php/admission/index
 ---
+2015/04/06 18:22:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 18:22:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 18:23:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 18:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 18:26:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 18:27:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/06 18:36:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 18:40:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 18:41:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 18:41:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:38:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:44:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:45:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:47:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:48:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:50:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:54:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:54:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:56:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:57:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 19:59:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 20:01:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 20:02:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 20:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/06 20:04:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/07 15:42:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---

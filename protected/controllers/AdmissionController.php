@@ -14,7 +14,7 @@ class AdmissionController extends RestController
     public function fetchStudents()
     {
         $studentsArray = array();
-        $students = LcsStudent::model()->with("address", "contact", "background", "requirement")->inactive()->findAll();
+        $students = LcsStudent::model()->with("address", "contact", "background", "requirement", "skill")->inactive()->findAll();
 
         $index = 0;
         foreach ($students as $student) {
@@ -31,6 +31,10 @@ class AdmissionController extends RestController
             $requirements = $student->requirement;
             foreach($requirements as $requirement){
                 $studentsArray[$index]["studentRequirements"][] = $requirement->attributes;
+            }
+            $skills = $student->skill;
+            foreach($skills as $skill){
+                $studentsArray[$index]["studentSkills"][] = $skill->attributes;
             }
             $index++;
         }
@@ -53,8 +57,8 @@ class AdmissionController extends RestController
             echo $this->restJsonEncode($this->fetchStudents());
         });
         $this->onRest('req.post.addStudent.render', function ($data) {
-            $userData = $data;
-            echo $this->restJsonEncode($this->addStudent($userData));
+            $studentData = $data;
+            echo $this->restJsonEncode($this->addStudent($studentData));
         });
     }
 }

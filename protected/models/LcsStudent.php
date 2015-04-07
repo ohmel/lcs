@@ -80,6 +80,7 @@ class LcsStudent extends CActiveRecord
 			'contact' => array(self::HAS_MANY, 'LcsStudentContactDetails', 'student_id'),
             'requirement' => array(self::HAS_MANY, 'LcsStudentRequirements', 'student_id'),
             'background' => array(self::HAS_MANY, 'LcsStudentEducationalBackground', 'student_id'),
+            'skill' => array(self::HAS_MANY, 'LcsStudentSkills', 'student_id'),
 		);
 	}
 
