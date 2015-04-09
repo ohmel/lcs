@@ -1,58 +1,61 @@
 <div style="font-family: 'Raleway', sans-serif;">
-    <style type="text/css">
+<style type="text/css">
 
-        #menu-link-effect-inner a {
-            font-family: 'Raleway', sans-serif;
-            position: relative;
-            display: inline-block;
-            margin: 0px 10px;
-            outline: none;
-            color: #435A6B;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 400;
-            text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-            font-size: 1.10em;
-        }
+    #menu-link-effect-inner a {
+        font-family: 'Raleway', sans-serif;
+        position: relative;
+        display: inline-block;
+        margin: 0px 10px;
+        outline: none;
+        color: #435A6B;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+        font-size: 1.10em;
+    }
 
-        nav a:hover,
-        nav a:focus {
-            outline: none;
-        }
+    nav a:hover,
+    nav a:focus {
+        outline: none;
+    }
 
-        h4 {
-            padding-left: 10px !important;
-        }
+    h4 {
+        padding-left: 10px !important;
+    }
 
-        .panel-title {
-            padding-left: 0px !important;
-        }
-        .form-group{
-            /*display: block !important;*/
-            vertical-align: top !important;
-            margin-bottom: 10px !important;
-        }
-    </style>
-    <h2 style="margin: 0px">Admit Student</h2>
-    <br/>
+    .panel-title {
+        padding-left: 0px !important;
+    }
 
-    <div id="menu-link-effect-inner">
-        <section class="color-1" style="background: white; text-align: left">
-            <nav class="cl-effect-7">
-                <a href="#/enrollment" role="button">Applicant List</a>
-                <a href="#/addStudent" role="button">Admit a student</a>
-                <a href="#" role="button">Receive Requirements</a>
-            </nav>
-        </section>
-        <!-- mainmenu -->
-    </div>
-    <hr/>
+    .form-group {
+        /*display: block !important;*/
+        vertical-align: top !important;
+        margin-bottom: 10px !important;
+    }
+</style>
+<h2 style="margin: 0px">Admit Student</h2>
+<br/>
 
-    <form name="userForm" class="form-inline" ng-submit="submitForm(userForm.$valid)" novalidate>
+<div id="menu-link-effect-inner">
+    <section class="color-1" style="background: white; text-align: left">
+        <nav class="cl-effect-7">
+            <a href="#/enrollment" role="button">Applicant List</a>
+            <a href="#/addStudent" role="button">Admit a student</a>
+            <a href="#" role="button">Receive Requirements</a>
+        </nav>
+    </section>
+    <!-- mainmenu -->
+</div>
+<hr/>
+
+<form name="userForm" class="form-inline" ng-submit="submitForm(userForm.$valid)" novalidate>
+    <!--Form Step 1 Basic Information-->
+    <div ng-show="formStep == 1">
         <!-- Course -->
         <div class="form-group" ng-init="student.course_id = 3">
-            <label>Course</label><br />
+            <label>Course</label><br/>
             <select class="form-control" ng-model="student.course_id" name="course_id">
                 <option value="1">BS in Computer Science</option>
                 <option value="2">BS in Information Technology</option>
@@ -65,32 +68,41 @@
         <br/><br/>
 
         <!-- FIRST NAME -->
-        <div class="form-group" ng-class="{ 'has-error' : userForm.student_firstname.$invalid && !userForm.student_firstname.$pristine }">
-            <label>First Name*</label><br />
-            <input style="width: 250px" type="text" name="student_firstname" class="form-control" ng-model="student.student_firstname" required>
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.student_firstname.$invalid && !userForm.student_firstname.$pristine }">
+            <label>First Name*</label><br/>
+            <input style="width: 250px" type="text" name="student_firstname" class="form-control"
+                   ng-model="student.student_firstname" required>
 
-            <p ng-show="userForm.student_firstname.$invalid && !userForm.student_firstname.$pristine" class="help-block">First Name is required.</p>
+            <p ng-show="userForm.student_firstname.$invalid && !userForm.student_firstname.$pristine"
+               class="help-block">First Name is required.</p>
         </div>
         <!-- LAST NAME -->
-        <div class="form-group" ng-class="{ 'has-error' : userForm.student_lastname.$invalid && !userForm.student_lastname.$pristine }">
-            <label>Last Name*</label><br />
-            <input style="width: 250px" type="text" name="student_lastname" class="form-control" ng-model="student.student_lastname" required>
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.student_lastname.$invalid && !userForm.student_lastname.$pristine }">
+            <label>Last Name*</label><br/>
+            <input style="width: 250px" type="text" name="student_lastname" class="form-control"
+                   ng-model="student.student_lastname" required>
 
-            <p ng-show="userForm.student_lastname.$invalid && !userForm.student_lastname.$pristine" class="help-block">Last name is required.</p>
+            <p ng-show="userForm.student_lastname.$invalid && !userForm.student_lastname.$pristine" class="help-block">
+                Last name is required.</p>
         </div>
 
         <!-- MIDDLE NAME -->
-        <div class="form-group" ng-class="{ 'has-error' : userForm.student_middlename.$invalid && !userForm.student_middlename.$pristine }">
-            <label>Middle Name*</label><br />
-            <input style="width: 250px" type="text" name="student_middlename" class="form-control" ng-model="student.student_middlename" required>
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.student_middlename.$invalid && !userForm.student_middlename.$pristine }">
+            <label>Middle Name*</label><br/>
+            <input style="width: 250px" type="text" name="student_middlename" class="form-control"
+                   ng-model="student.student_middlename" required>
 
-            <p ng-show="userForm.student_middlename.$invalid && !userForm.student_middlename.$pristine" class="help-block">Middle name is required.</p>
+            <p ng-show="userForm.student_middlename.$invalid && !userForm.student_middlename.$pristine"
+               class="help-block">Middle name is required.</p>
         </div>
         <br/><br/>
 
         <!-- Gender -->
         <div class="form-group" ng-init="student.student_gender = 'Male'">
-            <label>Gender</label><br />
+            <label>Gender</label><br/>
             <select class="form-control" ng-model="student.student_gender" name="student_gender">
                 <option>Male</option>
                 <option>Female</option>
@@ -99,93 +111,187 @@
 
         <!-- Birth date -->
         <div class="form-group">
-            <label>Birthdate</label><br />
-            <div class='input-group date' id='datetimepicker1'>
-                <input type='text' class="form-control" name="student_birthdate" ng-model="student.student_birthdate" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-            </div>
-            <script type="text/javascript">
-                $(function () {
-                    $('#datetimepicker1').datetimepicker({
-                        format: 'YYYY-MM-DD'
-                    });
-                });
-            </script>
+            <label>Birthdate</label><br/>
+            <p class="input-group">
+                <input style="width: 200px" type="text" class="form-control" datepicker-popup="{{format}}"
+                       ng-model="student.student_birthdate" is-open="opened" datepicker-options="dateOptions"
+                       date-disabled="disabled(date, mode)" ng-required="true" close-text="Close"/>
+              <span class="input-group-btn">
+                <button style="padding: 9px;" type="button" class="btn btn-default" ng-click="open($event)"><i
+                        class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
         </div>
         <!-- Age -->
-        <div class="form-group" ng-class="{ 'has-error' : userForm.student_age.$invalid && !userForm.student_age.$pristine }">
-            <label>Age*</label><br />
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.student_age.$invalid && !userForm.student_age.$pristine }">
+            <label>Age*</label><br/>
             <input type="text" name="student_age" class="form-control" ng-model="student.student_age" required>
 
-            <p ng-show="userForm.student_age.$invalid && !userForm.student_age.$pristine" class="help-block">Age is required.</p>
+            <p ng-show="userForm.student_age.$invalid && !userForm.student_age.$pristine" class="help-block">Age is
+                required.</p>
         </div>
         <br/><br/>
         <!-- Complexion -->
-        <div class="form-group" ng-class="{ 'has-error' : userForm.student_complexion.$invalid && !userForm.student_complexion.$pristine }">
-            <label>Complexion*</label><br />
-            <input type="text" name="student_complexion" class="form-control" ng-model="student.student_complexion" required>
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.student_complexion.$invalid && !userForm.student_complexion.$pristine }">
+            <label>Complexion*</label><br/>
+            <input type="text" name="student_complexion" class="form-control" ng-model="student.student_complexion"
+                   required>
 
-            <p ng-show="userForm.student_complexion.$invalid && !userForm.student_complexion.$pristine" class="help-block">Cpmplexion is required.</p>
+            <p ng-show="userForm.student_complexion.$invalid && !userForm.student_complexion.$pristine"
+               class="help-block">Cpmplexion is required.</p>
         </div>
 
         <!-- Eye Color -->
-        <div class="form-group" ng-class="{ 'has-error' : userForm.student_eye_color.$invalid && !userForm.student_eye_color.$pristine }">
-            <label>Eye Color*</label><br />
-            <input type="text" name="student_eye_color" class="form-control" ng-model="student.student_eye_color" required>
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.student_eye_color.$invalid && !userForm.student_eye_color.$pristine }">
+            <label>Eye Color*</label><br/>
+            <input type="text" name="student_eye_color" class="form-control" ng-model="student.student_eye_color"
+                   required>
 
-            <p ng-show="userForm.student_eye_color.$invalid && !userForm.student_eye_color.$pristine" class="help-block">Eye Color is required.</p>
+            <p ng-show="userForm.student_eye_color.$invalid && !userForm.student_eye_color.$pristine"
+               class="help-block">Eye Color is required.</p>
         </div>
 
         <!-- Height -->
-        <div class="form-group" ng-class="{ 'has-error' : userForm.student_height.$invalid && !userForm.student_height.$pristine }">
-            <label>Height* (in Ft and Inches)</label><br />
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.student_height.$invalid && !userForm.student_height.$pristine }">
+            <label>Height* (in Ft and Inches)</label><br/>
             <input type="text" name="student_height" class="form-control" ng-model="student.student_height" required>
 
-            <p ng-show="userForm.student_height.$invalid && !userForm.student_height.$pristine" class="help-block">Height is required.</p>
+            <p ng-show="userForm.student_height.$invalid && !userForm.student_height.$pristine" class="help-block">
+                Height is required.</p>
         </div>
 
         <!-- Blood Type -->
-        <div class="form-group" ng-class="{ 'has-error' : userForm.student_bloodtype.$invalid && !userForm.student_bloodtype.$pristine }">
-            <label>Blood Type*</label><br />
-            <input type="text" name="student_bloodtype" class="form-control" ng-model="student.student_bloodtype" required>
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.student_bloodtype.$invalid && !userForm.student_bloodtype.$pristine }">
+            <label>Blood Type*</label><br/>
+            <input type="text" name="student_bloodtype" class="form-control" ng-model="student.student_bloodtype"
+                   required>
 
-            <p ng-show="userForm.student_bloodtype.$invalid && !userForm.student_bloodtype.$pristine" class="help-block">Blood Type is required.</p>
+            <p ng-show="userForm.student_bloodtype.$invalid && !userForm.student_bloodtype.$pristine"
+               class="help-block">Blood Type is required.</p>
         </div>
 
         <br/><br/>
 
         <!-- Religion -->
-        <div class="form-group" ng-class="{ 'has-error' : userForm.student_religion.$invalid && !userForm.student_religion.$pristine }">
-            <label>Religion*</label><br />
-            <input type="text" name="student_religion" class="form-control" ng-model="student.student_religion" required>
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.student_religion.$invalid && !userForm.student_religion.$pristine }">
+            <label>Religion*</label><br/>
+            <input type="text" name="student_religion" class="form-control" ng-model="student.student_religion"
+                   required>
 
-            <p ng-show="userForm.student_religion.$invalid && !userForm.student_religion.$pristine" class="help-block">Religion is required.</p>
+            <p ng-show="userForm.student_religion.$invalid && !userForm.student_religion.$pristine" class="help-block">
+                Religion is required.</p>
         </div>
 
         <!-- Nationality -->
-        <div class="form-group" ng-class="{ 'has-error' : userForm.student_religion.$invalid && !userForm.student_religion.$pristine }">
-            <label>Nationality*</label><br />
-            <input type="text" name="student_religion" class="form-control" ng-model="student.student_religion" required>
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.student_nationality.$invalid && !userForm.student_nationality.$pristine }">
+            <label>Nationality*</label><br/>
+            <input type="text" name="student_nationality" class="form-control" ng-model="student.student_nationality"
+                   required>
 
-            <p ng-show="userForm.student_religion.$invalid && !userForm.student_religion.$pristine" class="help-block">Nationality is required.</p>
+            <p ng-show="userForm.student_nationality.$invalid && !userForm.student_nationality.$pristine"
+               class="help-block">Nationality is required.</p>
         </div>
 
         <!-- Language -->
-        <div class="form-group" ng-class="{ 'has-error' : userForm.student_language.$invalid && !userForm.student_language.$pristine }">
-            <label>Language*</label><br />
-            <input type="text" name="student_language" class="form-control" ng-model="student.student_language" required>
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.student_language.$invalid && !userForm.student_language.$pristine }">
+            <label>Language*</label><br/>
+            <input type="text" name="student_language" class="form-control" ng-model="student.student_language"
+                   required>
 
-            <p ng-show="userForm.student_language.$invalid && !userForm.student_language.$pristine" class="help-block">Language is required.</p>
+            <p ng-show="userForm.student_language.$invalid && !userForm.student_language.$pristine" class="help-block">
+                Language is required.</p>
         </div>
 
 
         <br/><br/>
+        <pre>{{student}}</pre>
+        <button type="button" class="btn btn-success" ng-click="setFormStep(2)">Next Step >></button>
+        <i>Contact Address</i><br/><br/>
+    </div>
 
-        <button type="submit" class="btn btn-success">Next Step >></button> <i>Contact Address</i>
+    <!--Form Step 2 Address Form-->
+    <div ng-show="formStep == 2">
+        <!-- Address Details -->
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.address_details.$invalid && !userForm.address_details.$pristine }">
+            <label>Address Details*</label><br/>
+            <input style="width: 250px" type="text" name="address_details" class="form-control" ng-model="address.address_details"
+                   required>
 
-    </form>
-    <br/><br/><br/><br/>
+            <p ng-show="userForm.address_details.$invalid && !userForm.address_details.$pristine" class="help-block">
+                Address Details is required.</p>
+        </div>
+        <!-- Street -->
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.address_street.$invalid && !userForm.address_street.$pristine }">
+            <label>Street*</label><br/>
+            <input type="text" name="address_street" class="form-control" ng-model="address.address_street"
+                   required>
+
+            <p ng-show="userForm.address_street.$invalid && !userForm.address_street.$pristine" class="help-block">
+                Street is required.</p>
+        </div>
+        <br/><br/>
+        <!-- PRovince -->
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.address_province.$invalid && !userForm.address_province.$pristine }">
+            <label>Province*</label><br/>
+            <input type="text" name="address_province" class="form-control" ng-model="address.address_province"
+                   required>
+
+            <p ng-show="userForm.address_province.$invalid && !userForm.address_province.$pristine" class="help-block">
+                Province is required.</p>
+        </div>
+
+        <!-- City -->
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.address_city.$invalid && !userForm.address_city.$pristine }">
+            <label>City*</label><br/>
+            <input type="text" name="address_city" class="form-control" ng-model="address.address_city"
+                   required>
+
+            <p ng-show="userForm.address_city.$invalid && !userForm.address_city.$pristine" class="help-block">
+                City is required.</p>
+        </div>
+        <br/><br/>
+        <!-- Country -->
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.address_country.$invalid && !userForm.address_country.$pristine }">
+            <label>Country*</label><br/>
+            <input type="text" name="address_country" class="form-control" ng-model="address.address_country"
+                   required>
+
+            <p ng-show="userForm.address_country.$invalid && !userForm.address_country.$pristine" class="help-block">
+                Country is required.</p>
+        </div>
+        <!-- Zip -->
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.address_zip.$invalid && !userForm.address_zip.$pristine }">
+            <label>Zip Code*</label><br/>
+            <input type="text" name="address_zip" class="form-control" ng-model="address.address_zip"
+                   required>
+
+            <p ng-show="userForm.address_zip.$invalid && !userForm.address_zip.$pristine" class="help-block">
+                Zip is required.</p>
+        </div>
+        <pre>{{address}}</pre>
+        <button type="button" class="btn btn-warning" ng-click="setFormStep(1)"><< Go Back</button>
+        <button type="button" class="btn btn-success" ng-click="setFormStep(3)">Next Step >></button>
+        <i>Educational Background</i><br/><br/>
+    </div>
+    <br/><br/>
+
+    <button type="submit" class="btn btn-success">Admit Applicant</button>
+
+</form>
+<br/><br/><br/><br/>
 </div>
 

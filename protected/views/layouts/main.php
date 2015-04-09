@@ -68,15 +68,22 @@
     <script
         src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+
     <!--  DatePicker  -->
-    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <script type="text/javascript"
+            src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet"
+          href="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
 
     <!-- Angular Controllers -->
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/angular/angular.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/app.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/routing.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/site/controllers/siteController.js"></script>
+    <script
+        src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script
+        src="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
     <script
         src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/controllers/userManagerController.js"></script>
     <script

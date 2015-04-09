@@ -21,17 +21,55 @@ app.controller('AdmissionController', function ($rootScope, $scope, Globals, ngN
             });
     }
 
-    if(currentRoute == "/addStudent"){
-        $scope.student = [];
+    if (currentRoute == "/addStudent") {
+        $scope.student = {};
+        $scope.address = {};
+        $scope.formStep = 1;
         // function to submit the form after all validation has occurred
-        $scope.submitForm = function(isValid) {
+        $scope.submitForm = function (isValid) {
 
             // check to make sure the form is completely valid
             if (isValid) {
-                alert('our form is amazing');
+                ngNotify.set("Form Successfull", 'success');
+            } else {
+                ngNotify.set("Error on Form", 'error');
             }
 
         };
+
+        $scope.setFormStep = function(step){
+            $scope.formStep = step;
+        }
+
+        //DATE PICKER SCOPE SETUP
+
+
+        // Disable weekend selection
+        $scope.disabled = function (date, mode) {
+            return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
+        };
+
+        $scope.toggleMin = function () {
+            $scope.minDate = $scope.minDate ? null : new Date();
+        };
+        $scope.toggleMin();
+
+        $scope.open = function ($event) {
+            $event.preventDefault();
+            $event.stopPropagation();
+
+            $scope.opened = true;
+        };
+
+        $scope.dateOptions = {
+            formatYear: 'yy',
+            startingDay: 1
+        };
+
+        $scope.formats = ['yyyy-MM-dd', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
+        $scope.format = $scope.formats[0];
+
+
     }
 
 });
