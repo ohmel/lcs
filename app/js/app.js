@@ -5,7 +5,9 @@
  */
 var app = angular.module('oSystems', ['ngAnimate','ngNotify','ngDialog','ngRoute'])
     .run(function($rootScope) {
-        $rootScope.route = "";
+        $rootScope.$on('$routeChangeSuccess', function (e, current, pre) {
+            $rootScope.currentRoute = current.$$route.originalPath;
+        });
 
     });
 

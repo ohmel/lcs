@@ -7,37 +7,57 @@ class AdmissionController extends RestController
      * using two-column layout. See 'protected/views/layouts/column2.php'.
      */
 
-    public function actionIndex(){
+    public function actionIndex()
+    {
         $this->render('admission');
     }
 
     public function fetchStudents()
     {
+        //Fetch All Student Applicants "inactive()"
         $studentsArray = array();
         $students = LcsStudent::model()->with("address", "contact", "background", "requirement", "skill")->inactive()->findAll();
 
-        $index = 0;
-        foreach ($students as $student) {
-            $studentsArray[$index] = $student->attributes;
-            $studentsArray[$index]["studentAddress"] = $student->address->attributes;
-            $contacts = $student->contact;
-            foreach($contacts as $contact){
-                $studentsArray[$index]["contactDetails"][] = $contact->attributes;
+        if ($students) {
+            $index = 0;
+            foreach ($students as $student) {
+
+                $contacts = $student->contact;
+                $backgrounds = $student->background;
+                $requirements = $student->requirement;
+                $skills = $student->skill;
+
+                $studentsArray[$index] = $student->attributes;
+
+                if ($student->address->attributes) {
+                    $studentsArray[$index]["studentAddress"] = $student->address->attributes;
+                }
+
+                //Assign Child records of the parent Student
+                //contacts, backgrounds, address amd requirements
+                foreach ($contacts as $contact) {
+                    $studentsArray[$index]["contactDetails"][] = $contact->attributes;
+                }
+                if ($backgrounds) {
+                    foreach ($backgrounds as $background) {
+                        $studentsArray[$index]["educationalBackground"][] = $background->attributes;
+                    }
+                }
+                if ($requirements) {
+                    foreach ($requirements as $requirement) {
+                        $studentsArray[$index]["studentRequirements"][] = $requirement->attributes;
+                    }
+                }
+                if ($skills) {
+                    foreach ($skills as $skill) {
+                        $studentsArray[$index]["studentSkills"][] = $skill->attributes;
+                    }
+                }
+
+                $index++;
             }
-            $backgrounds = $student->background;
-            foreach($backgrounds as $background){
-                $studentsArray[$index]["educationalBackground"][] = $background->attributes;
-            }
-            $requirements = $student->requirement;
-            foreach($requirements as $requirement){
-                $studentsArray[$index]["studentRequirements"][] = $requirement->attributes;
-            }
-            $skills = $student->skill;
-            foreach($skills as $skill){
-                $studentsArray[$index]["studentSkills"][] = $skill->attributes;
-            }
-            $index++;
         }
+
         return $studentsArray;
     }
 

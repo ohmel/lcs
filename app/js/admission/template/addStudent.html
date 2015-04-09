@@ -1,0 +1,191 @@
+<div style="font-family: 'Raleway', sans-serif;">
+    <style type="text/css">
+
+        #menu-link-effect-inner a {
+            font-family: 'Raleway', sans-serif;
+            position: relative;
+            display: inline-block;
+            margin: 0px 10px;
+            outline: none;
+            color: #435A6B;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+            font-size: 1.10em;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            outline: none;
+        }
+
+        h4 {
+            padding-left: 10px !important;
+        }
+
+        .panel-title {
+            padding-left: 0px !important;
+        }
+        .form-group{
+            /*display: block !important;*/
+            vertical-align: top !important;
+            margin-bottom: 10px !important;
+        }
+    </style>
+    <h2 style="margin: 0px">Admit Student</h2>
+    <br/>
+
+    <div id="menu-link-effect-inner">
+        <section class="color-1" style="background: white; text-align: left">
+            <nav class="cl-effect-7">
+                <a href="#/enrollment" role="button">Applicant List</a>
+                <a href="#/addStudent" role="button">Admit a student</a>
+                <a href="#" role="button">Receive Requirements</a>
+            </nav>
+        </section>
+        <!-- mainmenu -->
+    </div>
+    <hr/>
+
+    <form name="userForm" class="form-inline" ng-submit="submitForm(userForm.$valid)" novalidate>
+        <!-- Course -->
+        <div class="form-group" ng-init="student.course_id = 3">
+            <label>Course</label><br />
+            <select class="form-control" ng-model="student.course_id" name="course_id">
+                <option value="1">BS in Computer Science</option>
+                <option value="2">BS in Information Technology</option>
+                <option value="3">BS in Accountancy</option>
+                <option value="4">BS in Business Management</option>
+                <option value="5">BS in Tourism</option>
+            </select>
+        </div>
+
+        <br/><br/>
+
+        <!-- FIRST NAME -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.student_firstname.$invalid && !userForm.student_firstname.$pristine }">
+            <label>First Name*</label><br />
+            <input style="width: 250px" type="text" name="student_firstname" class="form-control" ng-model="student.student_firstname" required>
+
+            <p ng-show="userForm.student_firstname.$invalid && !userForm.student_firstname.$pristine" class="help-block">First Name is required.</p>
+        </div>
+        <!-- LAST NAME -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.student_lastname.$invalid && !userForm.student_lastname.$pristine }">
+            <label>Last Name*</label><br />
+            <input style="width: 250px" type="text" name="student_lastname" class="form-control" ng-model="student.student_lastname" required>
+
+            <p ng-show="userForm.student_lastname.$invalid && !userForm.student_lastname.$pristine" class="help-block">Last name is required.</p>
+        </div>
+
+        <!-- MIDDLE NAME -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.student_middlename.$invalid && !userForm.student_middlename.$pristine }">
+            <label>Middle Name*</label><br />
+            <input style="width: 250px" type="text" name="student_middlename" class="form-control" ng-model="student.student_middlename" required>
+
+            <p ng-show="userForm.student_middlename.$invalid && !userForm.student_middlename.$pristine" class="help-block">Middle name is required.</p>
+        </div>
+        <br/><br/>
+
+        <!-- Gender -->
+        <div class="form-group" ng-init="student.student_gender = 'Male'">
+            <label>Gender</label><br />
+            <select class="form-control" ng-model="student.student_gender" name="student_gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <!-- Birth date -->
+        <div class="form-group">
+            <label>Birthdate</label><br />
+            <div class='input-group date' id='datetimepicker1'>
+                <input type='text' class="form-control" name="student_birthdate" ng-model="student.student_birthdate" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $('#datetimepicker1').datetimepicker({
+                        format: 'YYYY-MM-DD'
+                    });
+                });
+            </script>
+        </div>
+        <!-- Age -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.student_age.$invalid && !userForm.student_age.$pristine }">
+            <label>Age*</label><br />
+            <input type="text" name="student_age" class="form-control" ng-model="student.student_age" required>
+
+            <p ng-show="userForm.student_age.$invalid && !userForm.student_age.$pristine" class="help-block">Age is required.</p>
+        </div>
+        <br/><br/>
+        <!-- Complexion -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.student_complexion.$invalid && !userForm.student_complexion.$pristine }">
+            <label>Complexion*</label><br />
+            <input type="text" name="student_complexion" class="form-control" ng-model="student.student_complexion" required>
+
+            <p ng-show="userForm.student_complexion.$invalid && !userForm.student_complexion.$pristine" class="help-block">Cpmplexion is required.</p>
+        </div>
+
+        <!-- Eye Color -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.student_eye_color.$invalid && !userForm.student_eye_color.$pristine }">
+            <label>Eye Color*</label><br />
+            <input type="text" name="student_eye_color" class="form-control" ng-model="student.student_eye_color" required>
+
+            <p ng-show="userForm.student_eye_color.$invalid && !userForm.student_eye_color.$pristine" class="help-block">Eye Color is required.</p>
+        </div>
+
+        <!-- Height -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.student_height.$invalid && !userForm.student_height.$pristine }">
+            <label>Height* (in Ft and Inches)</label><br />
+            <input type="text" name="student_height" class="form-control" ng-model="student.student_height" required>
+
+            <p ng-show="userForm.student_height.$invalid && !userForm.student_height.$pristine" class="help-block">Height is required.</p>
+        </div>
+
+        <!-- Blood Type -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.student_bloodtype.$invalid && !userForm.student_bloodtype.$pristine }">
+            <label>Blood Type*</label><br />
+            <input type="text" name="student_bloodtype" class="form-control" ng-model="student.student_bloodtype" required>
+
+            <p ng-show="userForm.student_bloodtype.$invalid && !userForm.student_bloodtype.$pristine" class="help-block">Blood Type is required.</p>
+        </div>
+
+        <br/><br/>
+
+        <!-- Religion -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.student_religion.$invalid && !userForm.student_religion.$pristine }">
+            <label>Religion*</label><br />
+            <input type="text" name="student_religion" class="form-control" ng-model="student.student_religion" required>
+
+            <p ng-show="userForm.student_religion.$invalid && !userForm.student_religion.$pristine" class="help-block">Religion is required.</p>
+        </div>
+
+        <!-- Nationality -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.student_religion.$invalid && !userForm.student_religion.$pristine }">
+            <label>Nationality*</label><br />
+            <input type="text" name="student_religion" class="form-control" ng-model="student.student_religion" required>
+
+            <p ng-show="userForm.student_religion.$invalid && !userForm.student_religion.$pristine" class="help-block">Nationality is required.</p>
+        </div>
+
+        <!-- Language -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.student_language.$invalid && !userForm.student_language.$pristine }">
+            <label>Language*</label><br />
+            <input type="text" name="student_language" class="form-control" ng-model="student.student_language" required>
+
+            <p ng-show="userForm.student_language.$invalid && !userForm.student_language.$pristine" class="help-block">Language is required.</p>
+        </div>
+
+
+        <br/><br/>
+
+        <button type="submit" class="btn btn-success">Next Step >></button> <i>Contact Address</i>
+
+    </form>
+    <br/><br/><br/><br/>
+</div>
+

@@ -19,196 +19,208 @@
     nav a:focus {
         outline: none;
     }
-    h4{
+
+    h4 {
         padding-left: 10px !important;
     }
-    .panel-title{
+
+    .panel-title {
         padding-left: 0px !important;
     }
 </style>
-<h2 style="margin: 0px">Enrollment</h2>
-<br/>
-<div id="menu-link-effect-inner">
-    <section class="color-1" style="background: white; text-align: left">
-        <nav class="cl-effect-7">
-            <a href="#/enrollment" role="button">Applicant List</a>
-            <a href="#" role="button">Admit a student</a>
-            <a href="#" role="button">Receive Requirements</a>
-        </nav>
-    </section>
-    <!-- mainmenu -->
-</div>
-<hr/>
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div style="font-family: 'Raleway', sans-serif;">
+    <h2 style="margin: 0px">Enrollment</h2>
+    <br/>
 
-    <div class="panel panel-default row" ng-repeat="student in admissionService.students">
-        <div class="panel-heading" role="tab" id="headingOne">
-            <div class="col-lg-4" style="text-align: left">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" onclick="return false;"
-                       href="#enrollment{{student.student_id}}" aria-expanded="true"
-                       aria-controls="enrollment{{student.student_id}}">
-                        <strong style="font-size: 20px;">{{student.student_firstname}}
-                            {{student.student_lastname}}</strong>
+    <div id="menu-link-effect-inner">
+        <section class="color-1" style="background: white; text-align: left">
+            <nav class="cl-effect-7">
+                <a href="#/enrollment" role="button">Applicant List</a>
+                <a href="#/addStudent" role="button">Admit a student</a>
+                <a href="#" role="button">Receive Requirements</a>
+            </nav>
+        </section>
+        <!-- mainmenu -->
+    </div>
+    <hr/>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+        <div class="panel panel-default row" ng-repeat="student in admissionService.students">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <div class="col-lg-4" style="text-align: left">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" onclick="return false;"
+                           href="#enrollment{{student.student_id}}" aria-expanded="true"
+                           aria-controls="enrollment{{student.student_id}}">
+                            <strong style="font-size: 20px;">{{student.student_firstname}}
+                                {{student.student_lastname}}</strong>
                     <span style="color: limegreen;font-size: 20px; " ng-if="student.student_status == 1"
                           class="glyphicon glyphicon-ok"></span>
                     <span style="color: red;font-size: 20px; " ng-if="student.student_status == 0"
                           class="glyphicon glyphicon-remove"></span>
-                    </a>
-                    <br/>
-                    {{student.student_number}}
-                    <br/>
+                        </a>
+                        <br/>
+                        {{student.student_number}}
+                        <br/>
 
-                </h4>
-            </div>
-            <div class="col-lg-8" style="text-align: right">
-                <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default"><span style="font-size: 24px;"
-                                                                        class="glyphicon glyphicon-edit"></span>
-                    </button>
-                    <button type="button" class="btn btn-default"><span style="font-size: 24px; color: red; "
-                                                                        class="glyphicon glyphicon-remove"></span>
-                    </button>
+                    </h4>
                 </div>
-            </div>
-            <div class="clearfix">
-            </div>
-        </div>
-        <div id="enrollment{{student.student_id}}" class="panel-collapse collapse" role="tabpanel"
-             aria-labelledby="headingOne" style="font-family: 'Raleway', sans-serif;">
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-8">
-                        <h2>{{student.student_firstname}} {{student.student_lastname}}</h2>
-
-                        <p><strong>Gender: </strong> {{student.student_gender}}</p>
-
-                        <p><strong>Birthdate: </strong> {{student.student_birthdate}} </p>
-
-                        <p><strong>Age: </strong> {{student.student_age}} </p>
-
-                        <p><strong>Height: </strong> {{student.student_height}}  <strong>Complexion: </strong> {{student.student_complexion}} </p>
-
-                        <p><strong>Eye Color: </strong> {{student.student_eye_color}}  <strong>Blood Type: </strong> {{student.student_bloodtype}} </p>
-
-                        <p><strong>Nationality: </strong> {{student.student_nationality}} </p>
-
-                        <p><strong>Language: </strong> {{student.student_language}} </p>
-
-                        <p><strong>Religion: </strong> {{student.student_religion}} </p>
-
-                        <p><strong>Skills: </strong>
-                            <span ng-repeat="skill in student.studentSkills" class="label label-info tags" style="margin-right: 5px">{{skill.skill_name}}</span>
-                        </p>
-
-                        <p>
-                        <address>
-                            <strong>Address</strong><br>
-                            {{student.studentAddress.address_street}} {{student.studentAddress.address_details}},<br>
-                            {{student.studentAddress.address_city}} {{student.studentAddress.address_province}}<br>
-                            {{student.studentAddress.address_country}} {{student.studentAddress.address_zip}}<br>
-                        </address>
-                        </p>
-
-
-                    </div>
-                    <!--/col-->
-                    <div class="col-xs-12 col-sm-4 text-center">
-                        <img style="border: 3px solid #435A6B" src="{{globals.rootUrl}}/images/sample/profilepic.png"
-                             alt="" class="center-block img-circle img-responsive">
-
-                    </div>
-                    <hr/>
-                    <h4> Educational Background</h4>
-                    <table class="table table-striped">
-                        <tr class="success">
-                            <th scope="row">School Name</th>
-                            <th scope="row">School Type</th>
-                            <th scope="row">School Address</th>
-                            <th scope="row">Year attended</th>
-                            <th scope="row">From to Year</th>
-                            <th scope="row">Extra Curricular</th>
-                            <th scope="row">Position</th>
-                            <th scope="row">Award</th>
-                        </tr>
-                        <tr ng-repeat="background in student.educationalBackground">
-                            <td><i class="fa fa-fw fa-building-o"></i> {{background.educ_school_name}}</td>
-                            <td>{{background.educ_school_type}}</td>
-                            <td>{{background.educ_school_address}}</td>
-                            <td>{{background.educ_years_attended}}</td>
-                            <td>{{background.educ_fromto_date}}</td>
-                            <td>{{background.educ_extracurricular}}</td>
-                            <td>{{background.educ_position}}</td>
-                            <td>{{background.educ_achievements}}</td>
-                        </tr>
-                    </table>
-                    <h4> Passed Documents</h4>
-                    <table class="table table-striped">
-                        <tr class="success">
-                            <th scope="row">Document</th>
-                            <th scope="row">Date Submitted</th>
-                            <th scope="row">Remarks</th>
-                        </tr>
-                        <tr ng-repeat="requirement in student.studentRequirements">
-                            <td><i class="fa fa-fw fa-file-o"></i> {{requirement.requirement_doc}}</td>
-                            <td>{{requirement.requirement_date_passed}}</td>
-                            <td>{{requirement.requirement_remarks}}</td>
-                        </tr>
-                    </table>
-                    <h4> In case of emergency please contact...</h4>
-                    <table class="table table-striped">
-                        <tr class="success">
-                            <th scope="row">Name</th>
-                            <th scope="row">Relationship</th>
-                            <th scope="row">Mobile No.</th>
-                            <th scope="row">Tel No.</th>
-                            <th scope="row">Address</th>
-                        </tr>
-                        <tr ng-repeat="contact in student.contactDetails">
-                            <td><i class="fa fa-fw fa-user"></i> {{contact.contact_name}}</td>
-                            <td>{{contact.contact_relationship}}</td>
-                            <td>{{contact.contact_mobile}}</td>
-                            <td>{{contact.contact_tel}}</td>
-                            <td>{{contact.contact_address}}</td>
-                        </tr>
-                    </table>
-                    <hr/>
-                    <!--/col-->
-
-                    <div class="col-xs-12 col-sm-4">
-                        <h2><strong> 20,7K </strong></h2>
-
-                        <p>
-                            <small>Followers</small>
-                        </p>
-                        <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> Follow
+                <div class="col-lg-8" style="text-align: right">
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default"><span style="font-size: 24px;"
+                                                                            class="glyphicon glyphicon-edit"></span>
+                        </button>
+                        <button type="button" class="btn btn-default"><span style="font-size: 24px; color: red; "
+                                                                            class="glyphicon glyphicon-remove"></span>
                         </button>
                     </div>
-                    <!--/col-->
-                    <div class="col-xs-12 col-sm-4">
-                        <h2><strong>245</strong></h2>
-
-                        <p>
-                            <small>Following</small>
-                        </p>
-                        <button class="btn btn-info btn-block"><span class="fa fa-user"></span> View Profile</button>
-                    </div>
-                    <!--/col-->
-                    <div class="col-xs-12 col-sm-4">
-                        <h2><strong>43</strong></h2>
-
-                        <p>
-                            <small>Snippets</small>
-                        </p>
-                        <button type="button" class="btn btn-primary btn-block"><span class="fa fa-gear"></span> Options
-                        </button>
-                    </div>
-                    <!--/col-->
                 </div>
-                <!--/row-->
+                <div class="clearfix">
+                </div>
             </div>
-            <!--/panel-body-->
+            <div id="enrollment{{student.student_id}}" class="panel-collapse collapse" role="tabpanel"
+                 aria-labelledby="headingOne" style="font-family: 'Raleway', sans-serif;">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+                            <h2>{{student.student_firstname}} {{student.student_lastname}}</h2>
+
+                            <p><strong>Gender: </strong> {{student.student_gender}}</p>
+
+                            <p><strong>Birthdate: </strong> {{student.student_birthdate}} </p>
+
+                            <p><strong>Age: </strong> {{student.student_age}} </p>
+
+                            <p><strong>Height: </strong> {{student.student_height}} <strong>Complexion: </strong>
+                                {{student.student_complexion}} </p>
+
+                            <p><strong>Eye Color: </strong> {{student.student_eye_color}} <strong>Blood Type: </strong>
+                                {{student.student_bloodtype}} </p>
+
+                            <p><strong>Nationality: </strong> {{student.student_nationality}} </p>
+
+                            <p><strong>Language: </strong> {{student.student_language}} </p>
+
+                            <p><strong>Religion: </strong> {{student.student_religion}} </p>
+
+                            <p><strong>Skills: </strong>
+                                <span ng-repeat="skill in student.studentSkills" class="label label-info tags"
+                                      style="margin-right: 5px">{{skill.skill_name}}</span>
+                            </p>
+
+                            <p>
+                            <address>
+                                <strong>Address</strong><br>
+                                {{student.studentAddress.address_street}}
+                                {{student.studentAddress.address_details}},<br>
+                                {{student.studentAddress.address_city}} {{student.studentAddress.address_province}}<br>
+                                {{student.studentAddress.address_country}} {{student.studentAddress.address_zip}}<br>
+                            </address>
+                            </p>
+
+
+                        </div>
+                        <!--/col-->
+                        <div class="col-xs-12 col-sm-4 text-center">
+                            <img style="border: 3px solid #435A6B"
+                                 src="{{globals.rootUrl}}/images/sample/profilepic.png"
+                                 alt="" class="center-block img-circle img-responsive">
+
+                        </div>
+                        <hr/>
+                        <h4> Educational Background</h4>
+                        <table class="table table-striped">
+                            <tr class="success">
+                                <th scope="row">School Name</th>
+                                <th scope="row">School Type</th>
+                                <th scope="row">School Address</th>
+                                <th scope="row">Year attended</th>
+                                <th scope="row">From to Year</th>
+                                <th scope="row">Extra Curricular</th>
+                                <th scope="row">Position</th>
+                                <th scope="row">Award</th>
+                            </tr>
+                            <tr ng-repeat="background in student.educationalBackground">
+                                <td><i class="fa fa-fw fa-building-o"></i> {{background.educ_school_name}}</td>
+                                <td>{{background.educ_school_type}}</td>
+                                <td>{{background.educ_school_address}}</td>
+                                <td>{{background.educ_years_attended}}</td>
+                                <td>{{background.educ_fromto_date}}</td>
+                                <td>{{background.educ_extracurricular}}</td>
+                                <td>{{background.educ_position}}</td>
+                                <td>{{background.educ_achievements}}</td>
+                            </tr>
+                        </table>
+                        <h4> Passed Documents</h4>
+                        <table class="table table-striped">
+                            <tr class="success">
+                                <th scope="row">Document</th>
+                                <th scope="row">Date Submitted</th>
+                                <th scope="row">Remarks</th>
+                            </tr>
+                            <tr ng-repeat="requirement in student.studentRequirements">
+                                <td><i class="fa fa-fw fa-file-o"></i> {{requirement.requirement_doc}}</td>
+                                <td>{{requirement.requirement_date_passed}}</td>
+                                <td>{{requirement.requirement_remarks}}</td>
+                            </tr>
+                        </table>
+                        <h4> In case of emergency please contact...</h4>
+                        <table class="table table-striped">
+                            <tr class="success">
+                                <th scope="row">Name</th>
+                                <th scope="row">Relationship</th>
+                                <th scope="row">Mobile No.</th>
+                                <th scope="row">Tel No.</th>
+                                <th scope="row">Address</th>
+                            </tr>
+                            <tr ng-repeat="contact in student.contactDetails">
+                                <td><i class="fa fa-fw fa-user"></i> {{contact.contact_name}}</td>
+                                <td>{{contact.contact_relationship}}</td>
+                                <td>{{contact.contact_mobile}}</td>
+                                <td>{{contact.contact_tel}}</td>
+                                <td>{{contact.contact_address}}</td>
+                            </tr>
+                        </table>
+                        <hr/>
+                        <!--/col-->
+
+                        <div class="col-xs-12 col-sm-4">
+                            <h2><strong> 20,7K </strong></h2>
+
+                            <p>
+                                <small>Followers</small>
+                            </p>
+                            <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> Follow
+                            </button>
+                        </div>
+                        <!--/col-->
+                        <div class="col-xs-12 col-sm-4">
+                            <h2><strong>245</strong></h2>
+
+                            <p>
+                                <small>Following</small>
+                            </p>
+                            <button class="btn btn-info btn-block"><span class="fa fa-user"></span> View Profile
+                            </button>
+                        </div>
+                        <!--/col-->
+                        <div class="col-xs-12 col-sm-4">
+                            <h2><strong>43</strong></h2>
+
+                            <p>
+                                <small>Snippets</small>
+                            </p>
+                            <button type="button" class="btn btn-primary btn-block"><span class="fa fa-gear"></span>
+                                Options
+                            </button>
+                        </div>
+                        <!--/col-->
+                    </div>
+                    <!--/row-->
+                </div>
+                <!--/panel-body-->
+            </div>
         </div>
+
     </div>
-
 </div>
