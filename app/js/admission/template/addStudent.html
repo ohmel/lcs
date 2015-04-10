@@ -212,7 +212,7 @@
 
 
         <br/><br/>
-        <pre>{{student}}</pre>
+
         <button type="button" class="btn btn-success" ng-click="setFormStep(2)">Next Step >></button>
         <i>Contact Address</i><br/><br/>
     </div>
@@ -282,14 +282,173 @@
             <p ng-show="userForm.address_zip.$invalid && !userForm.address_zip.$pristine" class="help-block">
                 Zip is required.</p>
         </div>
-        <pre>{{address}}</pre>
+        <br/><br/>
         <button type="button" class="btn btn-warning" ng-click="setFormStep(1)"><< Go Back</button>
         <button type="button" class="btn btn-success" ng-click="setFormStep(3)">Next Step >></button>
         <i>Educational Background</i><br/><br/>
     </div>
+
+    <div ng-show="formStep == 3">
+        <!-- School Name -->
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.educ_school_name.$invalid && !userForm.educ_school_name.$pristine }">
+            <label>School Name*</label><br/>
+            <input style="width: 500px" type="text" name="educ_school_name" class="form-control" ng-model="background.educ_school_name"
+                   required>
+
+            <p ng-show="userForm.educ_school_name.$invalid && !userForm.educ_school_name.$pristine" class="help-block">
+                School Name is required.</p>
+        </div>
+        <!-- School Type -->
+        <div class="form-group" ng-init="background.educ_school_type = 'High School'">
+            <label>Level</label><br/>
+            <select class="form-control" ng-model="background.educ_school_type" name="educ_school_type">
+                <option>Pre-school</option>
+                <option>Grade School</option>
+                <option>High School</option>
+                <option>College</option>
+            </select>
+        </div>
+        <br/><br/>
+        <!-- School Address -->
+        <div class="form-group"
+             ng-class="{ 'has-error' : userForm.educ_school_address.$invalid && !userForm.educ_school_address.$pristine }">
+            <label>School Address*</label><br/>
+            <input style="width: 500px" type="text" name="educ_school_address" class="form-control" ng-model="background.educ_school_address"
+                   required>
+            <p ng-show="userForm.educ_school_address.$invalid && !userForm.educ_school_address.$pristine" class="help-block">
+                School Address is required.</p>
+        </div>
+        <br/><br/>
+        <!-- Years Attended -->
+        <div class="form-group">
+            <label>Years Attended</label><br/>
+            <input type="text" name="educ_years_attended" class="form-control" ng-model="background.educ_years_attended">
+        </div>
+        <!-- From Year to -->
+        <div class="form-group">
+            <label>From Year</label><br/>
+            <input type="text" name="educ_fromto_date" class="form-control" ng-model="background.educ_fromto_date" placeholder="Year from - Year to">
+        </div>
+        <br/><br/>
+        <!-- Extra Curricular -->
+        <div class="form-group">
+            <label>Extra Curricular</label><br/>
+            <input style="width: 500px" type="text" name="educ_extracurricular" class="form-control" ng-model="background.educ_extracurricular">
+        </div>
+        <!-- Extra Curricular -->
+        <div class="form-group">
+            <label>Position</label><br/>
+            <input style="width: 200px" type="text" name="educ_position" class="form-control" ng-model="background.educ_position">
+        </div>
+        <br/><br/>
+        <!-- Achievements -->
+        <div class="form-group">
+            <label>Achievements</label><br/>
+            <textarea style="width: 500px; height: 200px" type="text" name="educ_achievements" class="form-control" ng-model="background.educ_achievements"></textarea>
+        </div>
+        <br/><br/>
+        <button type="button" class="btn btn-success" ng-click="addBackground(background)"><i class="fa fa-plus"></i> Add background to list</button>
+        <br/><br/>
+        <table class="table table-striped">
+            <tr class="success">
+                <th scope="row">School Name</th>
+                <th scope="row">School Type</th>
+                <th scope="row">School Address</th>
+                <th scope="row">Year attended</th>
+                <th scope="row">From to Year</th>
+                <th scope="row">Extra Curricular</th>
+                <th scope="row">Position</th>
+                <th scope="row">Award</th>
+            </tr>
+            <tr ng-repeat="backgrounds in educationalBackgrounds">
+                <td><i class="fa fa-fw fa-building-o"></i> {{backgrounds.educ_school_name}}</td>
+                <td>{{backgrounds.educ_school_type}}</td>
+                <td>{{backgrounds.educ_school_address}}</td>
+                <td>{{backgrounds.educ_years_attended}}</td>
+                <td>{{backgrounds.educ_fromto_date}}</td>
+                <td>{{backgrounds.educ_extracurricular}}</td>
+                <td>{{backgrounds.educ_position}}</td>
+                <td>{{backgrounds.educ_achievements}}</td>
+            </tr>
+        </table>
+        <br/><br/>
+        <button type="button" class="btn btn-warning" ng-click="setFormStep(2)"><< Go Back</button>
+        <button type="button" class="btn btn-success" ng-click="setFormStep(4)">Next Step >></button> <i>Emergency Contact</i>
+    </div>
+
+    <div ng-show="formStep == 4">
+        <!-- Contact Name -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.contact_name.$invalid && !userForm.contact_name.$pristine }">
+            <label>Contact Person*</label><br/>
+            <input style="width: 200px" type="text" name="contact_name" class="form-control" ng-model="contact.contact_name" required>
+            <p ng-show="userForm.contact_name.$invalid && !userForm.contact_name.$pristine" class="help-block">
+                Contact Name is required.</p>
+        </div>
+        <!-- Relationship -->
+        <div class="form-group" ng-init="contact.contact_relationship = 'Mother'">
+            <label>Relationship*</label><br/>
+            <select class="form-control" ng-model="contact.contact_relationship" name="contact_relationship">
+                <option>Mother</option>
+                <option>Father</option>
+                <option>Sibling</option>
+                <option>Relative</option>
+                <option>Guardian</option>
+            </select>
+        </div>
+        <br/><br/>
+        <!-- Mobile -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.contact_mobile.$invalid && !userForm.contact_mobile.$pristine }">
+            <label>Mobile Number*</label><br/>
+            <input style="width: 200px" type="text" name="contact_mobile" class="form-control" ng-model="contact.contact_mobile" required placeholder="'n/a' if not applicable">
+            <p ng-show="userForm.contact_mobile.$invalid && !userForm.contact_mobile.$pristine" class="help-block">
+                Mobile Number is required.</p>
+        </div>
+        <!-- Telephone -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.contact_tel.$invalid && !userForm.contact_tel.$pristine }">
+            <label>Telephone Number*</label><br/>
+            <input style="width: 200px" type="text" name="contact_tel" class="form-control" ng-model="contact.contact_tel" required placeholder="'n/a' if not applicable">
+            <p ng-show="userForm.contact_tel.$invalid && !userForm.contact_tel.$pristine" class="help-block">
+                Mobile Number is required.</p>
+        </div>
+        <br/><br/>
+        <!-- Address -->
+        <div class="form-group" ng-class="{ 'has-error' : userForm.contact_address.$invalid && !userForm.contact_address.$pristine }">
+            <label>Address*</label><br/>
+            <textarea type="text" style="width: 500px; height: 200px" type="text" name="contact_address" class="form-control" ng-model="contact.contact_address" required></textarea>
+            <p ng-show="userForm.contact_address.$invalid && !userForm.contact_address.$pristine" class="help-block">
+                Address is required.</p>
+        </div>
+        <br/><br/>
+        <button type="button" class="btn btn-success" ng-click="addContact(contact)"><i class="fa fa-plus"></i> Add contact to list</button>
+        <br/><br/>
+        <table class="table table-striped">
+            <tr class="success">
+                <th scope="row">Name</th>
+                <th scope="row">Relationship</th>
+                <th scope="row">Mobile No.</th>
+                <th scope="row">Tel No.</th>
+                <th scope="row">Address</th>
+            </tr>
+            <tr ng-repeat="contacts in contactDetails">
+                <td><i class="fa fa-fw fa-user"></i> {{contacts.contact_name}}</td>
+                <td>{{contacts.contact_relationship}}</td>
+                <td>{{contacts.contact_mobile}}</td>
+                <td>{{contacts.contact_tel}}</td>
+                <td>{{contacts.contact_address}}</td>
+            </tr>
+        </table>
+        <br/><br/>
+        <button type="button" class="btn btn-warning" ng-click="setFormStep(3)"><< Go Back</button>
+    </div>
+
     <br/><br/>
 
-    <button type="submit" class="btn btn-success">Admit Applicant</button>
+    <button type="submit" class="btn btn-success" ng-show="isValid">Admit Applicant</button>
+    <!--<pre>{{student}}</pre>-->
+    <!--<pre>{{address}}</pre>-->
+    <!--<pre>{{background}}</pre>-->
+    <!--<pre>{{educationalBackgrounds}}</pre>-->
 
 </form>
 <br/><br/><br/><br/>

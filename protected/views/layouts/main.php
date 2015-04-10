@@ -146,6 +146,7 @@
 </head>
 
 <body>
+<?php if (!Yii::app()->user->isGuest) { ?>
 <div id="menu-link-effect">
     <section class="color-1">
         <nav class="cl-effect-1">
@@ -160,7 +161,7 @@
 <br/>
 <br/>
 <br/>
-
+<?php } ?>
 <div class="container-fluid" id="page">
     <?php if (!Yii::app()->user->isGuest) { ?>
 

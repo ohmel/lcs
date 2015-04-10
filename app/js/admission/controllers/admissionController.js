@@ -9,6 +9,28 @@ app.controller('AdmissionController', function ($rootScope, $scope, Globals, ngN
     $scope.admissionService = admissionService;
     $scope.globals = Globals;
     var currentRoute = $rootScope.currentRoute;
+    var hasOwnProperty = Object.prototype.hasOwnProperty;
+
+    function isEmpty(obj) {
+
+        // null and undefined are "empty"
+        if (obj == null) return true;
+
+        // Assume if it has a length property with a non-zero value
+        // that that property is correct.
+        if (obj.length > 0)    return false;
+        if (obj.length === 0)  return true;
+
+        // Otherwise, does it have any properties of its own?
+        // Note that this doesn't handle
+        // toString and valueOf enumeration bugs in IE < 9
+        for (var key in obj) {
+            if (hasOwnProperty.call(obj, key)) return false;
+        }
+
+        return true;
+    }
+
 
     if (currentRoute == "/enrollment") {
         admissionService.fetchStudents(
@@ -22,38 +44,62 @@ app.controller('AdmissionController', function ($rootScope, $scope, Globals, ngN
     }
 
     if (currentRoute == "/addStudent") {
+
+        $scope.dateOptions = {
+            formatYear: 'yy',
+            startingDay: 1
+        };
+        $scope.isFormValid = false;
         $scope.student = {};
         $scope.address = {};
+        $scope.background = {};
+        $scope.educationalBackgrounds = [];
+        $scope.contact = {};
+        $scope.contactDetails = [];
         $scope.formStep = 1;
+
         // function to submit the form after all validation has occurred
         $scope.submitForm = function (isValid) {
-
+            $scope.isFormValid = isValid;
             // check to make sure the form is completely valid
             if (isValid) {
-                ngNotify.set("Form Successfull", 'success');
+                ngNotify.set("Form Successful", 'success');
             } else {
-                ngNotify.set("Error on Form", 'error');
+                ngNotify.set("You might have missed something in the form...", 'error');
             }
 
         };
 
-        $scope.setFormStep = function(step){
+        $scope.addBackground = function(background){
+            if(!isEmpty(background) && background.educ_school_name && background.educ_school_address){
+                $scope.educationalBackgrounds.push(background);
+                $scope.background = {'background_school_type': 'High School'};
+                ngNotify.set("Added new Educational Background", 'success');
+            }else{
+                ngNotify.set("You might have missed something in the form...", 'error');
+            }
+        }
+
+        $scope.addContact = function(contact){
+            if(!isEmpty(contact) && contact.contact_name && contact.contact_mobile && contact.contact_address &&  contact.contact_tel){
+                $scope.contactDetails.push(contact);
+                $scope.contact = {'contact_relationship': 'Mother'};
+                ngNotify.set("Added new Emergency Contact Details", 'success');
+            }else{
+                ngNotify.set("You might have missed something in the form...", 'error');
+            }
+        }
+
+        $scope.setFormStep = function (step) {
             $scope.formStep = step;
         }
 
         //DATE PICKER SCOPE SETUP
-
-
         // Disable weekend selection
+
         $scope.disabled = function (date, mode) {
             return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
         };
-
-        $scope.toggleMin = function () {
-            $scope.minDate = $scope.minDate ? null : new Date();
-        };
-        $scope.toggleMin();
-
         $scope.open = function ($event) {
             $event.preventDefault();
             $event.stopPropagation();
@@ -61,10 +107,6 @@ app.controller('AdmissionController', function ($rootScope, $scope, Globals, ngN
             $scope.opened = true;
         };
 
-        $scope.dateOptions = {
-            formatYear: 'yy',
-            startingDay: 1
-        };
 
         $scope.formats = ['yyyy-MM-dd', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
         $scope.format = $scope.formats[0];
