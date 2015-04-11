@@ -5,6 +5,7 @@
  *
  * The followings are the available columns in table 'lcs_student':
  * @property integer $student_id
+ * @property integer $level_id
  * @property string $student_number
  * @property string $student_firstname
  * @property string $student_lastname
@@ -48,6 +49,19 @@ class LcsStudent extends CActiveRecord
 		return 'lcs_student';
 	}
 
+    public function getStudentLevel($levelId){
+        return LcsLevel::model()->findByPk($levelId)->level_name;
+    }
+
+    public function getStudentCourse($courseId){
+        if($courseId == 0){
+            return "Course not available";
+        }else{
+            return LcsCourse::model()->findByPk($courseId)->course_name;
+        }
+
+    }
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -56,7 +70,7 @@ class LcsStudent extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('student_number, student_firstname, student_lastname, student_middlename, student_gender, student_birthdate, student_age, student_complexion, student_eye_color, student_height, student_religion, course_id, student_status, student_bloodtype, student_nationality, student_language', 'required'),
+			array('student_number, student_firstname, student_lastname, student_middlename, student_gender, student_birthdate, student_age, student_complexion, student_eye_color, student_height, student_religion, course_id, level_id, student_status, student_bloodtype, student_nationality, student_language', 'required'),
 			array('course_id, student_status', 'numerical', 'integerOnly'=>true),
 			array('student_number, student_firstname, student_lastname, student_middlename', 'length', 'max'=>50),
 			array('student_gender, student_bloodtype', 'length', 'max'=>10),
@@ -81,6 +95,8 @@ class LcsStudent extends CActiveRecord
             'requirement' => array(self::HAS_MANY, 'LcsStudentRequirements', 'student_id'),
             'background' => array(self::HAS_MANY, 'LcsStudentEducationalBackground', 'student_id'),
             'skill' => array(self::HAS_MANY, 'LcsStudentSkills', 'student_id'),
+            'level' => array(self::BELONGS_TO, 'LcsLevel', 'level_id'),
+            'course' => array(self::BELONGS_TO, 'LcsCourse', 'course_id'),
 		);
 	}
 
@@ -103,6 +119,7 @@ class LcsStudent extends CActiveRecord
 			'student_height' => 'Student Height',
 			'student_religion' => 'Student Religion',
 			'course_id' => 'Course',
+			'level_id' => 'Level',
 			'student_status' => 'Student Status',
 			'student_bloodtype' => 'Student Bloodtype',
 			'student_nationality' => 'Student Nationality',
@@ -134,6 +151,7 @@ class LcsStudent extends CActiveRecord
 		$criteria->compare('student_height',$this->student_height,true);
 		$criteria->compare('student_religion',$this->student_religion,true);
 		$criteria->compare('course_id',$this->course_id);
+		$criteria->compare('level_id',$this->level_id);
 		$criteria->compare('student_status',$this->student_status);
 		$criteria->compare('student_bloodtype',$this->student_bloodtype,true);
 		$criteria->compare('student_nationality',$this->student_nationality,true);

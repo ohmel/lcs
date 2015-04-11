@@ -53,15 +53,19 @@
 <form name="userForm" class="form-inline" ng-submit="submitForm(userForm.$valid)" novalidate>
     <!--Form Step 1 Basic Information-->
     <div ng-show="formStep == 1">
+        <!-- Level -->
+        <div class="form-group" ng-init="student.level_id = 1">
+            <label>Level</label><br/>
+            <select style="width: 200px" class="form-control" ng-model="student.level_id" name="level_id">
+                <option ng-repeat="level in levels" value="{{level.levelId}}">{{level.levelName}}</option>
+            </select>
+        </div>
         <!-- Course -->
-        <div class="form-group" ng-init="student.course_id = 3">
+        <div ng-show="checkIfCollegeLevel(student.level_id)" class="form-group" ng-init="student.course_id = 0">
             <label>Course</label><br/>
             <select class="form-control" ng-model="student.course_id" name="course_id">
-                <option value="1">BS in Computer Science</option>
-                <option value="2">BS in Information Technology</option>
-                <option value="3">BS in Accountancy</option>
-                <option value="4">BS in Business Management</option>
-                <option value="5">BS in Tourism</option>
+                <option value="0">Select Course</option>
+                <option ng-repeat="course in courses" value="{{course.courseId}}">{{course.courseName}}</option>
             </select>
         </div>
 
@@ -444,7 +448,7 @@
 
     <br/><br/>
 
-    <button type="submit" class="btn btn-success" ng-show="isValid">Admit Applicant</button>
+    <button type="submit" class="btn btn-success">Admit Applicant</button>
     <!--<pre>{{student}}</pre>-->
     <!--<pre>{{address}}</pre>-->
     <!--<pre>{{background}}</pre>-->

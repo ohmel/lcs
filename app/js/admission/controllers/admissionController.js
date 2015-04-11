@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-app.controller('AdmissionController', function ($rootScope, $scope, Globals, ngNotify, ngDialog, admissionService) {
+app.controller('AdmissionController', function ($rootScope, $scope, Globals, ngNotify, ngDialog, admissionService, lookUpService) {
     $('i').tooltip();
     $scope.admissionService = admissionService;
     $scope.globals = Globals;
@@ -56,7 +56,44 @@ app.controller('AdmissionController', function ($rootScope, $scope, Globals, ngN
         $scope.educationalBackgrounds = [];
         $scope.contact = {};
         $scope.contactDetails = [];
+        $scope.levels = [];
+        $scope.courses = [];
         $scope.formStep = 1;
+
+        lookUpService.fetchLevels(
+            function (success) {
+                $scope.levels = success.data;
+            }, function (error) {
+                ngNotify.set(error.message, 'error')
+            });
+
+        lookUpService.fetchCourses(
+            function (success) {
+                $scope.courses = success.data;
+            }, function (error) {
+                ngNotify.set(error.message, 'error')
+            });
+
+        $scope.checkIfCollegeLevel = function(levelId){
+            if(!_.isEmpty($scope.levels)){
+                var levelIdsArr = [];
+                var levelIds = _.pluck($scope.levels, 'levelId');
+
+                _.each(levelIds, function(id){
+                    levelIdsArr.push(parseInt(id));
+                });
+
+                var index = _.indexOf(levelIdsArr, parseInt(levelId), true);
+                var levelType = $scope.levels[index]['levelType'];
+                if(levelType == 1){
+                    return true;
+                }else{
+                    return false;
+                }
+            }else{
+                return false;
+            }
+        }
 
         // function to submit the form after all validation has occurred
         $scope.submitForm = function (isValid) {

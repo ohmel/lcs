@@ -105,6 +105,7 @@
     <script
         src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/services/userManagerService.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/services/admissionService.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/site/services/lookUpService.js"></script>
 
     <!-- Angular Factories -->
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/factories/globals.js"></script>
