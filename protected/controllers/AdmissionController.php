@@ -64,7 +64,43 @@ class AdmissionController extends RestController
     public function addStudent($studentData)
     {
         try {
-//          TODO: Put add code in here...
+            $student = new LcsStudent();
+            $student->attributes = $studentData['student'];
+            $student->student_number = $studentData['student']['student_firstname']." Not Issued Yet";
+            $student->student_status = 0;
+
+            if(!$student->save()){
+                throw new CHttpException(500, "Adding new applicant failed");
+            }
+
+            $address = new LcsStudentAddress();
+            $address->attributes = $studentData['address'];
+            $address->student_id = $student->student_id;
+
+            if(!$address->save()){
+                throw new CHttpException(500, "Adding new applicant address failed");
+            }
+
+            foreach($studentData['educationalBackgrounds'] as $educBackground){
+                $background = new LcsStudentEducationalBackground();
+                $background->attributes = $educBackground;
+                $background->student_id = $student->student_id;
+
+                if(!$background->save()){
+                    throw new CHttpException(500, "Adding new Educational Background failed");
+                }
+            }
+
+            foreach($studentData['contactDetails'] as $contactDetails){
+                $contact = new LcsStudentContactDetails();
+                $contact->attributes = $contactDetails;
+                $contact->student_id = $student->student_id;
+
+                if(!$contact->save()){
+                    throw new CHttpException(500, "Adding new Contact Details failed");
+                }
+            }
+
             return $studentData;
         } catch (Exception $e) {
             throw new CHttpException(500, $e->getMessage());

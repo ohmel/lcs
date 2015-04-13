@@ -3854,3 +3854,423 @@ Stack trace:
 REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
 HTTP_REFERER=http://localhost/lcs/index.php/admission/index
 ---
+2015/04/12 08:42:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/12 17:50:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/
+---
+2015/04/13 18:59:04 [warning] [application] Failed to set unsafe attribute "contact_relationship" of "LcsStudentEducationalBackground".
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (97)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (118)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/13 18:59:04 [warning] [application] Failed to set unsafe attribute "contact_name" of "LcsStudentEducationalBackground".
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (97)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (118)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/13 18:59:04 [warning] [application] Failed to set unsafe attribute "contact_mobile" of "LcsStudentEducationalBackground".
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (97)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (118)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/13 18:59:04 [warning] [application] Failed to set unsafe attribute "contact_tel" of "LcsStudentEducationalBackground".
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (97)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (118)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/13 18:59:04 [warning] [application] Failed to set unsafe attribute "contact_address" of "LcsStudentEducationalBackground".
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (97)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (118)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/13 18:59:07 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'Adding new Contact Details failed' in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:107
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(118): AdmissionController->addStudent(Array)
+#1 [internal function]: AdmissionController->{closure}(Array, NULL, NULL)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.post.addStu...', Array)
+#4 [internal function]: ERestBehavior->emitRest('req.post.addStu...', Array)
+#5 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): CComponent->__call('emitRest', Array)
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): AdmissionController->emitRest('req.post.addStu...', Array)
+#8 [internal function]: EActionRestPOST->{closure}(Array, Array)
+#9 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#10 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(51): ERestBaseAction->finalRender(Object(Closure))
+#11 [internal function]: EActionRestPOST->run('addStudent', NULL, NULL)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestPOST), Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestPOST), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestPOST))
+#16 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestPOST), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.POST')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/lcs/index.php/api/admission/addStudent
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/13 19:00:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/13 19:02:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Not Issued Yet' for key 'student_number'. The SQL statement executed was: INSERT INTO `lcs_student` (`level_id`, `course_id`, `student_gender`, `student_firstname`, `student_lastname`, `student_middlename`, `student_birthdate`, `student_age`, `student_complexion`, `student_eye_color`, `student_height`, `student_bloodtype`, `student_religion`, `student_nationality`, `student_language`, `student_number`, `student_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16).
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (73)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (118)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/13 19:02:53 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Not Issued Yet' for key 'student_number'. The SQL statement executed was: INSERT INTO `lcs_student` (`level_id`, `course_id`, `student_gender`, `student_firstname`, `student_lastname`, `student_middlename`, `student_birthdate`, `student_age`, `student_complexion`, `student_eye_color`, `student_height`, `student_bloodtype`, `student_religion`, `student_nationality`, `student_language`, `student_number`, `student_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16)' in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:107
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(118): AdmissionController->addStudent(Array)
+#1 [internal function]: AdmissionController->{closure}(Array, NULL, NULL)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.post.addStu...', Array)
+#4 [internal function]: ERestBehavior->emitRest('req.post.addStu...', Array)
+#5 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): CComponent->__call('emitRest', Array)
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): AdmissionController->emitRest('req.post.addStu...', Array)
+#8 [internal function]: EActionRestPOST->{closure}(Array, Array)
+#9 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#10 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(51): ERestBaseAction->finalRender(Object(Closure))
+#11 [internal function]: EActionRestPOST->run('addStudent', NULL, NULL)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestPOST), Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestPOST), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestPOST))
+#16 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestPOST), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.POST')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/lcs/index.php/api/admission/addStudent
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/13 19:03:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index?level_id=5&course_id=0&student_firstname=sdf&student_lastname=sdafsdaf&student_middlename=sdfasadf&student_gender=Male&student_age=12&student_complexion=asdfdas&student_eye_color=sadfsd&student_height=sadfasd&student_bloodtype=sadfasdf&student_religion=sadfasd&student_nationality=sdfas&student_language=sdafsdf&address_details=sadfsad&address_street=sdafsdaf&address_province=sadfdsa&address_city=sdafsdaf&address_country=sdfsd&address_zip=213&educ_school_name=&educ_school_type=%3F+undefined%3Aundefined+%3F&educ_school_address=&educ_years_attended=&educ_fromto_date=&educ_extracurricular=&educ_position=&educ_achievements=&contact_name=&contact_relationship=Mother&contact_mobile=&contact_tel=&contact_address=
+---
+2015/04/13 19:04:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Not Issued Yet' for key 'student_number'. The SQL statement executed was: INSERT INTO `lcs_student` (`level_id`, `course_id`, `student_gender`, `student_firstname`, `student_lastname`, `student_middlename`, `student_birthdate`, `student_age`, `student_complexion`, `student_eye_color`, `student_height`, `student_bloodtype`, `student_religion`, `student_nationality`, `student_language`, `student_number`, `student_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16).
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (73)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (118)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/13 19:04:37 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Not Issued Yet' for key 'student_number'. The SQL statement executed was: INSERT INTO `lcs_student` (`level_id`, `course_id`, `student_gender`, `student_firstname`, `student_lastname`, `student_middlename`, `student_birthdate`, `student_age`, `student_complexion`, `student_eye_color`, `student_height`, `student_bloodtype`, `student_religion`, `student_nationality`, `student_language`, `student_number`, `student_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16)' in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:107
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(118): AdmissionController->addStudent(Array)
+#1 [internal function]: AdmissionController->{closure}(Array, NULL, NULL)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.post.addStu...', Array)
+#4 [internal function]: ERestBehavior->emitRest('req.post.addStu...', Array)
+#5 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): CComponent->__call('emitRest', Array)
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): AdmissionController->emitRest('req.post.addStu...', Array)
+#8 [internal function]: EActionRestPOST->{closure}(Array, Array)
+#9 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#10 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(51): ERestBaseAction->finalRender(Object(Closure))
+#11 [internal function]: EActionRestPOST->run('addStudent', NULL, NULL)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestPOST), Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestPOST), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestPOST))
+#16 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestPOST), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.POST')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/lcs/index.php/api/admission/addStudent
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index?level_id=5&course_id=0&student_firstname=sdf&student_lastname=sdafsdaf&student_middlename=sdfasadf&student_gender=Male&student_age=12&student_complexion=asdfdas&student_eye_color=sadfsd&student_height=sadfasd&student_bloodtype=sadfasdf&student_religion=sadfasd&student_nationality=sdfas&student_language=sdafsdf&address_details=sadfsad&address_street=sdafsdaf&address_province=sadfdsa&address_city=sdafsdaf&address_country=sdfsd&address_zip=213&educ_school_name=&educ_school_type=%3F+undefined%3Aundefined+%3F&educ_school_address=&educ_years_attended=&educ_fromto_date=&educ_extracurricular=&educ_position=&educ_achievements=&contact_name=&contact_relationship=Mother&contact_mobile=&contact_tel=&contact_address=
+---
+2015/04/13 19:06:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`lcs_db`.`lcs_student`, CONSTRAINT `lcs_student_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `lcs_course` (`course_id`)). The SQL statement executed was: INSERT INTO `lcs_student` (`level_id`, `course_id`, `student_gender`, `student_firstname`, `student_lastname`, `student_middlename`, `student_birthdate`, `student_age`, `student_complexion`, `student_eye_color`, `student_height`, `student_bloodtype`, `student_religion`, `student_nationality`, `student_language`, `student_number`, `student_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16).
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (73)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (118)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/13 19:06:18 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`lcs_db`.`lcs_student`, CONSTRAINT `lcs_student_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `lcs_course` (`course_id`)). The SQL statement executed was: INSERT INTO `lcs_student` (`level_id`, `course_id`, `student_gender`, `student_firstname`, `student_lastname`, `student_middlename`, `student_birthdate`, `student_age`, `student_complexion`, `student_eye_color`, `student_height`, `student_bloodtype`, `student_religion`, `student_nationality`, `student_language`, `student_number`, `student_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16)' in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:107
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(118): AdmissionController->addStudent(Array)
+#1 [internal function]: AdmissionController->{closure}(Array, NULL, NULL)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.post.addStu...', Array)
+#4 [internal function]: ERestBehavior->emitRest('req.post.addStu...', Array)
+#5 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): CComponent->__call('emitRest', Array)
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): AdmissionController->emitRest('req.post.addStu...', Array)
+#8 [internal function]: EActionRestPOST->{closure}(Array, Array)
+#9 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#10 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(51): ERestBaseAction->finalRender(Object(Closure))
+#11 [internal function]: EActionRestPOST->run('addStudent', NULL, NULL)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestPOST), Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestPOST), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestPOST))
+#16 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestPOST), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.POST')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/lcs/index.php/api/admission/addStudent
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index?level_id=5&course_id=0&student_firstname=sdf&student_lastname=sdafsdaf&student_middlename=sdfasadf&student_gender=Male&student_age=12&student_complexion=asdfdas&student_eye_color=sadfsd&student_height=sadfasd&student_bloodtype=sadfasdf&student_religion=sadfasd&student_nationality=sdfas&student_language=sdafsdf&address_details=sadfsad&address_street=sdafsdaf&address_province=sadfdsa&address_city=sdafsdaf&address_country=sdfsd&address_zip=213&educ_school_name=&educ_school_type=%3F+undefined%3Aundefined+%3F&educ_school_address=&educ_years_attended=&educ_fromto_date=&educ_extracurricular=&educ_position=&educ_achievements=&contact_name=&contact_relationship=Mother&contact_mobile=&contact_tel=&contact_address=
+---
+2015/04/13 19:07:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`lcs_db`.`lcs_student`, CONSTRAINT `lcs_student_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `lcs_course` (`course_id`)). The SQL statement executed was: INSERT INTO `lcs_student` (`level_id`, `course_id`, `student_gender`, `student_firstname`, `student_lastname`, `student_middlename`, `student_birthdate`, `student_age`, `student_complexion`, `student_eye_color`, `student_height`, `student_bloodtype`, `student_religion`, `student_nationality`, `student_language`, `student_number`, `student_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16).
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (72)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (117)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/13 19:07:42 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`lcs_db`.`lcs_student`, CONSTRAINT `lcs_student_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `lcs_course` (`course_id`)). The SQL statement executed was: INSERT INTO `lcs_student` (`level_id`, `course_id`, `student_gender`, `student_firstname`, `student_lastname`, `student_middlename`, `student_birthdate`, `student_age`, `student_complexion`, `student_eye_color`, `student_height`, `student_bloodtype`, `student_religion`, `student_nationality`, `student_language`, `student_number`, `student_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16)' in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:106
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(117): AdmissionController->addStudent(Array)
+#1 [internal function]: AdmissionController->{closure}(Array, NULL, NULL)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.post.addStu...', Array)
+#4 [internal function]: ERestBehavior->emitRest('req.post.addStu...', Array)
+#5 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): CComponent->__call('emitRest', Array)
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): AdmissionController->emitRest('req.post.addStu...', Array)
+#8 [internal function]: EActionRestPOST->{closure}(Array, Array)
+#9 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#10 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(51): ERestBaseAction->finalRender(Object(Closure))
+#11 [internal function]: EActionRestPOST->run('addStudent', NULL, NULL)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestPOST), Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestPOST), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestPOST))
+#16 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestPOST), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.POST')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/lcs/index.php/api/admission/addStudent
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index?level_id=5&course_id=0&student_firstname=sdf&student_lastname=sdafsdaf&student_middlename=sdfasadf&student_gender=Male&student_age=12&student_complexion=asdfdas&student_eye_color=sadfsd&student_height=sadfasd&student_bloodtype=sadfasdf&student_religion=sadfasd&student_nationality=sdfas&student_language=sdafsdf&address_details=sadfsad&address_street=sdafsdaf&address_province=sadfdsa&address_city=sdafsdaf&address_country=sdfsd&address_zip=213&educ_school_name=&educ_school_type=%3F+undefined%3Aundefined+%3F&educ_school_address=&educ_years_attended=&educ_fromto_date=&educ_extracurricular=&educ_position=&educ_achievements=&contact_name=&contact_relationship=Mother&contact_mobile=&contact_tel=&contact_address=
+---
+2015/04/13 19:07:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`lcs_db`.`lcs_student`, CONSTRAINT `lcs_student_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `lcs_course` (`course_id`)). The SQL statement executed was: INSERT INTO `lcs_student` (`level_id`, `course_id`, `student_gender`, `student_firstname`, `student_lastname`, `student_middlename`, `student_birthdate`, `student_age`, `student_complexion`, `student_eye_color`, `student_height`, `student_bloodtype`, `student_religion`, `student_nationality`, `student_language`, `student_number`, `student_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16).
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (72)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (117)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/13 19:07:49 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`lcs_db`.`lcs_student`, CONSTRAINT `lcs_student_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `lcs_course` (`course_id`)). The SQL statement executed was: INSERT INTO `lcs_student` (`level_id`, `course_id`, `student_gender`, `student_firstname`, `student_lastname`, `student_middlename`, `student_birthdate`, `student_age`, `student_complexion`, `student_eye_color`, `student_height`, `student_bloodtype`, `student_religion`, `student_nationality`, `student_language`, `student_number`, `student_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16)' in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:106
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(117): AdmissionController->addStudent(Array)
+#1 [internal function]: AdmissionController->{closure}(Array, NULL, NULL)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.post.addStu...', Array)
+#4 [internal function]: ERestBehavior->emitRest('req.post.addStu...', Array)
+#5 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): CComponent->__call('emitRest', Array)
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): AdmissionController->emitRest('req.post.addStu...', Array)
+#8 [internal function]: EActionRestPOST->{closure}(Array, Array)
+#9 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#10 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(51): ERestBaseAction->finalRender(Object(Closure))
+#11 [internal function]: EActionRestPOST->run('addStudent', NULL, NULL)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestPOST), Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestPOST), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestPOST))
+#16 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestPOST), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.POST')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/lcs/index.php/api/admission/addStudent
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index?level_id=5&course_id=0&student_firstname=sdf&student_lastname=sdafsdaf&student_middlename=sdfasadf&student_gender=Male&student_age=12&student_complexion=asdfdas&student_eye_color=sadfsd&student_height=sadfasd&student_bloodtype=sadfasdf&student_religion=sadfasd&student_nationality=sdfas&student_language=sdafsdf&address_details=sadfsad&address_street=sdafsdaf&address_province=sadfdsa&address_city=sdafsdaf&address_country=sdfsd&address_zip=213&educ_school_name=&educ_school_type=%3F+undefined%3Aundefined+%3F&educ_school_address=&educ_years_attended=&educ_fromto_date=&educ_extracurricular=&educ_position=&educ_achievements=&contact_name=&contact_relationship=Mother&contact_mobile=&contact_tel=&contact_address=
+---
+2015/04/13 20:25:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index?level_id=5&course_id=0&student_firstname=sdf&student_lastname=sdafsdaf&student_middlename=sdfasadf&student_gender=Male&student_age=12&student_complexion=asdfdas&student_eye_color=sadfsd&student_height=sadfasd&student_bloodtype=sadfasdf&student_religion=sadfasd&student_nationality=sdfas&student_language=sdafsdf&address_details=sadfsad&address_street=sdafsdaf&address_province=sadfdsa&address_city=sdafsdaf&address_country=sdfsd&address_zip=213&educ_school_name=&educ_school_type=%3F+undefined%3Aundefined+%3F&educ_school_address=&educ_years_attended=&educ_fromto_date=&educ_extracurricular=&educ_position=&educ_achievements=&contact_name=&contact_relationship=Mother&contact_mobile=&contact_tel=&contact_address=
+---
+2015/04/13 20:27:47 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'Adding new applicant failed' in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:106
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(117): AdmissionController->addStudent(Array)
+#1 [internal function]: AdmissionController->{closure}(Array, NULL, NULL)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.post.addStu...', Array)
+#4 [internal function]: ERestBehavior->emitRest('req.post.addStu...', Array)
+#5 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): CComponent->__call('emitRest', Array)
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): AdmissionController->emitRest('req.post.addStu...', Array)
+#8 [internal function]: EActionRestPOST->{closure}(Array, Array)
+#9 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#10 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(51): ERestBaseAction->finalRender(Object(Closure))
+#11 [internal function]: EActionRestPOST->run('addStudent', NULL, NULL)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestPOST), Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestPOST), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestPOST))
+#16 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestPOST), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.POST')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/lcs/index.php/api/admission/addStudent
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index?level_id=5&course_id=0&student_firstname=sdf&student_lastname=sdafsdaf&student_middlename=sdfasadf&student_gender=Male&student_age=12&student_complexion=asdfdas&student_eye_color=sadfsd&student_height=sadfasd&student_bloodtype=sadfasdf&student_religion=sadfasd&student_nationality=sdfas&student_language=sdafsdf&address_details=sadfsad&address_street=sdafsdaf&address_province=sadfdsa&address_city=sdafsdaf&address_country=sdfsd&address_zip=213&educ_school_name=&educ_school_type=%3F+undefined%3Aundefined+%3F&educ_school_address=&educ_years_attended=&educ_fromto_date=&educ_extracurricular=&educ_position=&educ_achievements=&contact_name=&contact_relationship=Mother&contact_mobile=&contact_tel=&contact_address=
+---
+2015/04/13 20:28:45 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'Adding new applicant failed' in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:106
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(117): AdmissionController->addStudent(Array)
+#1 [internal function]: AdmissionController->{closure}(Array, NULL, NULL)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.post.addStu...', Array)
+#4 [internal function]: ERestBehavior->emitRest('req.post.addStu...', Array)
+#5 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): CComponent->__call('emitRest', Array)
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): AdmissionController->emitRest('req.post.addStu...', Array)
+#8 [internal function]: EActionRestPOST->{closure}(Array, Array)
+#9 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#10 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(51): ERestBaseAction->finalRender(Object(Closure))
+#11 [internal function]: EActionRestPOST->run('addStudent', NULL, NULL)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestPOST), Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestPOST), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestPOST))
+#16 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestPOST), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.POST')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/lcs/index.php/api/admission/addStudent
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index?level_id=5&course_id=0&student_firstname=sdf&student_lastname=sdafsdaf&student_middlename=sdfasadf&student_gender=Male&student_age=12&student_complexion=asdfdas&student_eye_color=sadfsd&student_height=sadfasd&student_bloodtype=sadfasdf&student_religion=sadfasd&student_nationality=sdfas&student_language=sdafsdf&address_details=sadfsad&address_street=sdafsdaf&address_province=sadfdsa&address_city=sdafsdaf&address_country=sdfsd&address_zip=213&educ_school_name=&educ_school_type=%3F+undefined%3Aundefined+%3F&educ_school_address=&educ_years_attended=&educ_fromto_date=&educ_extracurricular=&educ_position=&educ_achievements=&contact_name=&contact_relationship=Mother&contact_mobile=&contact_tel=&contact_address=
+---
+2015/04/13 20:29:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`lcs_db`.`lcs_student`, CONSTRAINT `lcs_student_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `lcs_course` (`course_id`)). The SQL statement executed was: INSERT INTO `lcs_student` (`level_id`, `course_id`, `student_gender`, `student_firstname`, `student_lastname`, `student_birthdate`, `student_age`, `student_complexion`, `student_eye_color`, `student_height`, `student_bloodtype`, `student_religion`, `student_language`, `student_nationality`, `student_middlename`, `student_number`, `student_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16).
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (72)
+in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php (117)
+in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2015/04/13 20:29:51 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`lcs_db`.`lcs_student`, CONSTRAINT `lcs_student_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `lcs_course` (`course_id`)). The SQL statement executed was: INSERT INTO `lcs_student` (`level_id`, `course_id`, `student_gender`, `student_firstname`, `student_lastname`, `student_birthdate`, `student_age`, `student_complexion`, `student_eye_color`, `student_height`, `student_bloodtype`, `student_religion`, `student_language`, `student_nationality`, `student_middlename`, `student_number`, `student_status`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16)' in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:106
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(117): AdmissionController->addStudent(Array)
+#1 [internal function]: AdmissionController->{closure}(Array, NULL, NULL)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.post.addStu...', Array)
+#4 [internal function]: ERestBehavior->emitRest('req.post.addStu...', Array)
+#5 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): CComponent->__call('emitRest', Array)
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): AdmissionController->emitRest('req.post.addStu...', Array)
+#8 [internal function]: EActionRestPOST->{closure}(Array, Array)
+#9 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#10 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(51): ERestBaseAction->finalRender(Object(Closure))
+#11 [internal function]: EActionRestPOST->run('addStudent', NULL, NULL)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestPOST), Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestPOST), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestPOST))
+#16 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestPOST), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.POST')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/lcs/index.php/api/admission/addStudent
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index?level_id=5&course_id=0&student_firstname=sdf&student_lastname=sdafsdaf&student_middlename=sdfasadf&student_gender=Male&student_age=12&student_complexion=asdfdas&student_eye_color=sadfsd&student_height=sadfasd&student_bloodtype=sadfasdf&student_religion=sadfasd&student_nationality=sdfas&student_language=sdafsdf&address_details=sadfsad&address_street=sdafsdaf&address_province=sadfdsa&address_city=sdafsdaf&address_country=sdfsd&address_zip=213&educ_school_name=&educ_school_type=%3F+undefined%3Aundefined+%3F&educ_school_address=&educ_years_attended=&educ_fromto_date=&educ_extracurricular=&educ_position=&educ_achievements=&contact_name=&contact_relationship=Mother&contact_mobile=&contact_tel=&contact_address=
+---
+2015/04/13 20:30:27 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'Adding new Educational Background failed' in C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php:106
+Stack trace:
+#0 C:\xampp\htdocs\lcs\protected\controllers\AdmissionController.php(117): AdmissionController->addStudent(Array)
+#1 [internal function]: AdmissionController->{closure}(Array, NULL, NULL)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#3 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('req.post.addStu...', Array)
+#4 [internal function]: ERestBehavior->emitRest('req.post.addStu...', Array)
+#5 C:\xampp\htdocs\yii\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): CComponent->__call('emitRest', Array)
+#7 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(36): AdmissionController->emitRest('req.post.addStu...', Array)
+#8 [internal function]: EActionRestPOST->{closure}(Array, Array)
+#9 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#10 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestPOST.php(51): ERestBaseAction->finalRender(Object(Closure))
+#11 [internal function]: EActionRestPOST->run('addStudent', NULL, NULL)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestPOST), Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestPOST), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestPOST))
+#16 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestPOST), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.POST')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/lcs/index.php/api/admission/addStudent
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index?level_id=5&course_id=0&student_firstname=sdf&student_lastname=sdafsdaf&student_middlename=sdfasadf&student_gender=Male&student_age=12&student_complexion=asdfdas&student_eye_color=sadfsd&student_height=sadfasd&student_bloodtype=sadfasdf&student_religion=sadfasd&student_nationality=sdfas&student_language=sdafsdf&address_details=sadfsad&address_street=sdafsdaf&address_province=sadfdsa&address_city=sdafsdaf&address_country=sdfsd&address_zip=213&educ_school_name=&educ_school_type=%3F+undefined%3Aundefined+%3F&educ_school_address=&educ_years_attended=&educ_fromto_date=&educ_extracurricular=&educ_position=&educ_achievements=&contact_name=&contact_relationship=Mother&contact_mobile=&contact_tel=&contact_address=
+---
+2015/04/13 20:34:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index?level_id=5&course_id=0&student_firstname=sdf&student_lastname=sdafsdaf&student_middlename=sdfasadf&student_gender=Male&student_age=12&student_complexion=asdfdas&student_eye_color=sadfsd&student_height=sadfasd&student_bloodtype=sadfasdf&student_religion=sadfasd&student_nationality=sdfas&student_language=sdafsdf&address_details=sadfsad&address_street=sdafsdaf&address_province=sadfdsa&address_city=sdafsdaf&address_country=sdfsd&address_zip=213&educ_school_name=&educ_school_type=%3F+undefined%3Aundefined+%3F&educ_school_address=&educ_years_attended=&educ_fromto_date=&educ_extracurricular=&educ_position=&educ_achievements=&contact_name=&contact_relationship=Mother&contact_mobile=&contact_tel=&contact_address=
+---

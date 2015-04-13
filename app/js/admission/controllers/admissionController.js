@@ -99,8 +99,17 @@ app.controller('AdmissionController', function ($rootScope, $scope, Globals, ngN
         $scope.submitForm = function (isValid) {
             $scope.isFormValid = isValid;
             // check to make sure the form is completely valid
-            if (isValid) {
-                ngNotify.set("Form Successful", 'success');
+            if (!_.isEmpty($scope.student) && !_.isEmpty($scope.address) && !_.isEmpty($scope.educationalBackgrounds)&& !_.isEmpty($scope.contactDetails)) {
+                var studentDetails = {};
+                studentDetails.student = $scope.student;
+                studentDetails.address = $scope.address;
+                studentDetails.educationalBackgrounds = $scope.educationalBackgrounds;
+                studentDetails.contactDetails = $scope.contactDetails;
+                admissionService.addStudent(function(success){
+                    ngNotify.set("Successfully Added new Applicant!", 'success');
+                }, function(error){
+                    ngNotify.set(error.data, 'error');
+                },studentDetails);
             } else {
                 ngNotify.set("You might have missed something in the form...", 'error');
             }
@@ -143,7 +152,6 @@ app.controller('AdmissionController', function ($rootScope, $scope, Globals, ngN
 
             $scope.opened = true;
         };
-
 
         $scope.formats = ['yyyy-MM-dd', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
         $scope.format = $scope.formats[0];

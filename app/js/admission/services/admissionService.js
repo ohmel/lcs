@@ -10,11 +10,11 @@ app.service('admissionService', function ($http, Globals) {
                 url: url+'admission/fetchStudents'
             }).success(callback).error(errback);
         },
-        addUser = function(callback, errback, students){
+        addStudent = function(callback, errback, student){
             $http({
                 method: 'POST',
-                url: url+'user/addUser',
-                data: students
+                url: url+'admission/addStudent',
+                data: student
             }).success(callback).error(errback);
         };
 
@@ -23,6 +23,6 @@ app.service('admissionService', function ($http, Globals) {
     return {
         students: students,
         fetchStudents: fetchStudents,
-        addUser: addUser
+        addStudent: addStudent
     };
 });
