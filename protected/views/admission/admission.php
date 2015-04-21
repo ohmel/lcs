@@ -47,11 +47,11 @@
                 <ul>
                     <li>
                         <a href="#/enrollment"><i class="fa fa-fw fa-user"></i>
-                            <span>Enrollment</span>
+                            <span>Admissions</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-file-o"></i>
+                        <a href="#/tests"><i class="fa fa-fw fa-file-o"></i>
                             <span>Tests</span>
                         </a>
                     </li>
