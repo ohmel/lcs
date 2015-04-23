@@ -1,0 +1,64 @@
+<style type="text/css">
+
+    #menu-link-effect-inner a {
+        font-family: 'Raleway', sans-serif;
+        position: relative;
+        display: inline-block;
+        margin: 0px 10px;
+        outline: none;
+        color: #435A6B;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+        font-size: 1.10em;
+    }
+
+    nav a:hover,
+    nav a:focus {
+        outline: none;
+    }
+
+    h4 {
+        padding-left: 10px !important;
+    }
+
+    .panel-title {
+        padding-left: 0px !important;
+    }
+</style>
+<div>
+    <div id="menu-link-effect-inner">
+        <section class="color-1" style="background: white; text-align: left">
+            <nav class="cl-effect-7">
+                <a href="#/makeTest" role="button">Make a Test</a>
+                <a href="#/tests" role="button">Test List</a>
+                <!--<a href="#" role="button">Receive Requirements</a>-->
+            </nav>
+        </section>
+        <!-- mainmenu -->
+    </div>
+    <div class="page-header" style="margin-top: 0px; padding-top: 0px">
+        <h1>{{test.test_name}} <small>{{test.test_description}}</small></h1>
+    </div>
+    <form class="form-inline">
+        <div class="well well-sm" ng-repeat="question in test.questions">
+            <p class="lead" style="margin-bottom: 5px">{{question.question}}</p>
+            <div ng-if="question.question_type == 'Multiple Choice'">
+                <div class="radio label label-info tags" ng-repeat="answer in question.answers" style="margin-right: 10px; font-size: 14px">
+                    <label>
+                        <input type="radio" name="radioOnQuestion{{question.question_id}}" id="radioOnQuestion{{answer.answer_id}}" value="{{answer.answer_id}}">
+                        {{answer.answer}}&nbsp;
+                    </label>
+                </div>
+            </div>
+            <div ng-if="question.question_type == 'Fill Blanks'">
+                <div class="form-group" ng-repeat="answer in question.answers">
+                    <input style="width: 300px" type="text" name="inputOnQuestion{{question.questionId}}" class="form-control" id="inputOnQuestion{{question.questionId}}" placeholder="{{answer.answer}}">
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>

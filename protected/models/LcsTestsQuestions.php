@@ -59,7 +59,7 @@ class LcsTestsQuestions extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'lcsQuestionAnswers' => array(self::HAS_MANY, 'LcsQuestionAnswers', 'question_id'),
+			'answers' => array(self::HAS_MANY, 'LcsQuestionAnswers', 'question_id'),
 			'test' => array(self::BELONGS_TO, 'LcsTests', 'test_id'),
 		);
 	}

@@ -4443,3 +4443,147 @@ Stack trace:
 REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
 HTTP_REFERER=http://localhost/lcs/index.php/admission/index
 ---
+2015/04/22 19:32:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Resource Not Found' in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php:56
+Stack trace:
+#0 [internal function]: EActionRestGET->{closure}(Array, Array)
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#3 [internal function]: EActionRestGET->run('fetchTests', NULL, NULL)
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/lcs/index.php/api/admission/fetchTests
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/22 19:36:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Resource Not Found' in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php:56
+Stack trace:
+#0 [internal function]: EActionRestGET->{closure}(Array, Array)
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#3 [internal function]: EActionRestGET->run('getTest', NULL, NULL)
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/lcs/index.php/api/admission/getTest?0=1
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/22 19:37:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Resource Not Found' in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php:56
+Stack trace:
+#0 [internal function]: EActionRestGET->{closure}(Array, Array)
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#3 [internal function]: EActionRestGET->run('getTest', NULL, NULL)
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/lcs/index.php/api/admission/getTest?testId=1
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/22 19:38:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Resource Not Found' in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php:56
+Stack trace:
+#0 [internal function]: EActionRestGET->{closure}(Array, Array)
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#3 [internal function]: EActionRestGET->run('getTest', NULL, NULL)
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/lcs/index.php/api/admission/getTest?testId=1
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/22 19:39:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Resource Not Found' in C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php:56
+Stack trace:
+#0 [internal function]: EActionRestGET->{closure}(Array, Array)
+#1 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(60): call_user_func_array(Object(Closure), Array)
+#2 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(59): ERestBaseAction->finalRender(Object(Closure))
+#3 [internal function]: EActionRestGET->run('getTest', NULL, NULL)
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(73): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(EActionRestGET))
+#8 C:\xampp\htdocs\lcs\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(88): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): ERestFilter->preFilter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('REST.GET')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/REST....')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/lcs/index.php/api/admission/getTest?testId=1
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/23 17:51:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tests/REST.GET".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('tests/REST.GET')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/lcs/index.php/api/tests/fetchTests
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/23 17:51:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tests/REST.GET".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('tests/REST.GET')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/lcs/index.php/api/tests/fetchTests
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---
+2015/04/23 17:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{globals.rootUrl}}".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('{{globals.rootU...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('{{globals.rootU...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admission/{{glo...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\lcs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/lcs/index.php/admission/%7B%7Bglobals.rootUrl%7D%7D/images/sample/profilepic.png
+HTTP_REFERER=http://localhost/lcs/index.php/admission/index
+---

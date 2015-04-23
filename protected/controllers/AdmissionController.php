@@ -107,6 +107,40 @@ class AdmissionController extends RestController
         }
     }
 
+    public function fetchTests(){
+        $testsArray = array();
+        $tests = LcsTests::model()->active()->findAll();
+        if($tests){
+            foreach($tests as $key => $test){
+                $testsArray[$key] = $test->attributes;
+            }
+            return $testsArray;
+        }else{
+            throw new CHttoException(500, "Failed to fetch tests");
+        }
+    }
+
+    public function getTest($testId){
+        $testArray = array();
+        $test = LcsTests::model()->with("questions")->active()->findByPk($testId);
+        if($test){
+            $testArray = $test->attributes;
+            $questions = $test->questions;
+            if(count($questions) > 0){
+                foreach($questions as $key => $question){
+                    $testArray['questions'][$key] = $question->attributes;
+                    $answers = LcsQuestionAnswers::model()->findAll("question_id = {$question->question_id}");
+                    if($answers){
+                        foreach($answers as $key2 => $answer){
+                            $testArray['questions'][$key]['answers'][$key2] = $answer->attributes;
+                        }
+                    }
+                }
+            }
+        }
+        return $testArray;
+    }
+
     public function restEvents()
     {
         $this->onRest('req.get.fetchStudents.render', function () {
@@ -115,6 +149,15 @@ class AdmissionController extends RestController
         $this->onRest('req.post.addStudent.render', function ($data) {
             $studentData = $data;
             echo $this->restJsonEncode($this->addStudent($studentData));
+        });
+
+        $this->onRest('req.get.getTest.render', function () {
+            $testId = $_GET['testId'];
+            echo $this->restJsonEncode($this->getTest($testId));
+        });
+
+        $this->onRest('req.get.fetchTests.render', function () {
+            echo $this->restJsonEncode($this->fetchTests());
         });
     }
 }

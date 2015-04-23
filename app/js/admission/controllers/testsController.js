@@ -4,13 +4,17 @@
  * and open the template in the editor.
  */
 
-app.controller('AdmissionController', function ($rootScope, $scope, Globals, ngNotify, ngDialog, admissionService, lookUpService) {
+app.controller('TestsController', function ($rootScope, $scope, Globals, ngNotify, ngDialog, admissionService, testsService, lookUpService, $route, $routeParams, $location) {
     $('i').tooltip();
     $scope.admissionService = admissionService;
+    $scope.testsService = testsService;
     $scope.globals = Globals;
+    $scope.route = $route;
     var currentRoute = $rootScope.currentRoute;
     var hasOwnProperty = Object.prototype.hasOwnProperty;
-
+    $scope.tests = [];
+    $scope.test = {};
+    //alert(currentRoute);
     function isEmpty(obj) {
 
         // null and undefined are "empty"
@@ -29,6 +33,30 @@ app.controller('AdmissionController', function ($rootScope, $scope, Globals, ngN
         }
 
         return true;
+    }
+
+    if (currentRoute == "/tests") {
+        testsService.fetchTests(
+            function (success) {
+                $scope.tests = success.data;
+                ngNotify.set("Successfully loaded all Tests", 'info');
+            }, function (error) {
+                ngNotify.set(error.message, 'error');
+            });
+    }
+
+    if (currentRoute == "/makeTest") {
+
+    }
+
+    if(currentRoute == "/viewTest/:testId"){
+        testsService.getTest(
+            function (success) {
+                $scope.test = success.data;
+                ngNotify.set("Successfully loaded "+$scope.test.test_name+" Test", 'info');
+            }, function (error) {
+                ngNotify.set(error.message, 'error');
+            }, $route.current.params.testId);
     }
 
 

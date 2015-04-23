@@ -23,10 +23,15 @@ app.config(['$locationProvider', '$routeProvider',
                 currentRoute: 'addStudent'
             }).
             when('/tests', {
-            templateUrl: '../../app/js/admission/template/tests.html',
-            controller: 'TestsController',
-            currentRoute: 'tests'
-        }).
+                templateUrl: '../../app/js/admission/template/tests.html',
+                controller: 'TestsController',
+                currentRoute: 'tests'
+            }).
+            when('/viewTest/:testId', {
+                templateUrl: '../../app/js/admission/template/viewTest.html',
+                controller: 'TestsController',
+                currentRoute: 'viewTest'
+            }).
             when('/', {
                 templateUrl: '../../app/js/admission/template/admission.html',
                 controller: 'AddUserController',

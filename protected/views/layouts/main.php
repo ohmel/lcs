@@ -90,6 +90,7 @@
         src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/controllers/addUserController.js"></script>
     <script
         src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/controllers/admissionController.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/controllers/testsController.js"></script>
 
 
     <!-- Angular Injectors -->
@@ -105,6 +106,7 @@
     <script
         src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/services/userManagerService.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/services/admissionService.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/services/testsService.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/site/services/lookUpService.js"></script>
 
     <!-- Angular Factories -->

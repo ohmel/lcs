@@ -6,7 +6,7 @@
  * The followings are the available columns in table 'lcs_tests':
  * @property integer $test_id
  * @property string $test_name
- * @property string $test_descrption
+ * @property string $test_description
  * @property integer $test_status
  *
  * The followings are the available model relations:
@@ -40,12 +40,12 @@ class LcsTests extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('test_name, test_descrption, test_status', 'required'),
+			array('test_name, test_description, test_status', 'required'),
 			array('test_status', 'numerical', 'integerOnly'=>true),
 			array('test_name', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('test_id, test_name, test_descrption, test_status', 'safe', 'on'=>'search'),
+			array('test_id, test_name, test_description, test_status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,7 +57,7 @@ class LcsTests extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'lcsTestsQuestions' => array(self::HAS_MANY, 'LcsTestsQuestions', 'test_id'),
+			'questions' => array(self::HAS_MANY, 'LcsTestsQuestions', 'test_id'),
 		);
 	}
 
@@ -69,7 +69,7 @@ class LcsTests extends CActiveRecord
 		return array(
 			'test_id' => 'Test',
 			'test_name' => 'Test Name',
-			'test_descrption' => 'Test Descrption',
+			'test_description' => 'Test Description',
 			'test_status' => 'Test Status',
 		);
 	}
@@ -87,11 +87,23 @@ class LcsTests extends CActiveRecord
 
 		$criteria->compare('test_id',$this->test_id);
 		$criteria->compare('test_name',$this->test_name,true);
-		$criteria->compare('test_descrption',$this->test_descrption,true);
+		$criteria->compare('test_description',$this->test_description,true);
 		$criteria->compare('test_status',$this->test_status);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
+
+    public function scopes()
+    {
+        return array(
+            'inactive'=>array(
+                'condition'=>'test_status=0',
+            ),
+            'active'=>array(
+                'condition'=>'test_status=1',
+            ),
+        );
+    }
 }
