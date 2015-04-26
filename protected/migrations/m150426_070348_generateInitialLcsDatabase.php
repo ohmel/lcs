@@ -1,13 +1,13 @@
 <?php
 
-class m150210_092348_generateAuthTables extends YdDbMigration {
+class m150426_070348_generateInitialLcsDatabase extends YdDbMigration {
 
     public function safeUp() {
 
         // Run single query: update the sentence table to include a langid
 
         // Import sql file:
-        $this->import('m150210_092348_generateAuthTables.sql');
+        $this->import('m150426_070348_generateInitialLcsDatabase.sql');
     }
 
 }
