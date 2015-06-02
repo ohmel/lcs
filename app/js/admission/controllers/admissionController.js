@@ -137,6 +137,8 @@ app.controller('AdmissionController', function ($rootScope, $scope, Globals, ngN
         }
 
         $scope.setFormStep = function (step) {
+            //form steps: when filling up the form these steps determine if the form
+            //is currently showing the right form e.g (Student info, Contact, Address, Educational Background)
             $scope.formStep = step;
         }
 
