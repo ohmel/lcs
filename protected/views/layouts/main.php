@@ -41,7 +41,7 @@
           media="print"/>
     <link rel="stylesheet"
           href="<?php echo Yii::app()->request->baseUrl; ?>/bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="http://css-spinners.com/css/spinners.css" type="text/css">
+    <!--link rel="stylesheet" href="http://css-spinners.com/css/spinners.css" type="text/css"-->
 
     <!--[if lt IE 8]>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css"
@@ -91,6 +91,7 @@
     <script
         src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/controllers/admissionController.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/controllers/testsController.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/studentMonitoring/controllers/studentMonitoringController.js"></script>
 
 
     <!-- Angular Injectors -->
@@ -103,11 +104,11 @@
 
 
     <!-- Angular Services -->
-    <script
-        src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/services/userManagerService.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/userManager/services/userManagerService.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/services/admissionService.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/admission/services/testsService.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/site/services/lookUpService.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/studentMonitoring/services/studentMonitoringService.js"></script>
 
     <!-- Angular Factories -->
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/app/js/factories/globals.js"></script>

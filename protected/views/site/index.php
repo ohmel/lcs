@@ -38,7 +38,7 @@
                 <div style="color: white; font-size: 11px; margin-top: 5px">
                     Monitor and Manage Students
                 </div>
-                <a href="http://dribbble.com/shots/1115960-Music">Manage Students</a>
+                <?php echo CHtml::link("Manage Students", array('studentMonitoring/index#/studentMonitoring')) ?>
             </figcaption>
         </figure>
     </li>

@@ -37,6 +37,11 @@ app.config(['$locationProvider', '$routeProvider',
                 controller: 'TestsController',
                 currentRoute: 'makeTest'
             }).
+            when('/studentMonitoring', {
+                templateUrl: '../../app/js/studentMonitoring/template/studentMonitoring.html',
+                controller: 'TestsController',
+                currentRoute: 'makeTest'
+            }).
             when('/', {
                 templateUrl: '../../app/js/admission/template/admission.html',
                 controller: 'AddUserController',
